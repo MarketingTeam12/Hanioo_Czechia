@@ -1,0 +1,5 @@
+.legal-container { max-width: 760px; margin: 0 auto; }
+.legal-updated { color: var(--color-text-light); font-size: 13.5px; margin-bottom: 32px; }
+.legal-section { margin-bottom: 30px; }
+.legal-section h2 { font-size: 19px; color: var(--color-primary); margin-bottom: 10px; }
+.legal-section p { font-size: 14.5px; color: var(--color-text-light); line-height: 1.8; }

@@ -1,0 +1,418 @@
+{
+  "nav": {
+    "home": "Domů",
+    "about": "O nás",
+    "services": "Služby",
+    "industries": "Odvětví",
+    "languages": "Jazyky",
+    "testimonials": "Reference",
+    "faq": "Časté dotazy",
+    "blog": "Novinky",
+    "contact": "Kontakt",
+    "getQuote": "Nezávazná nabídka",
+    "callUs": "Zavolejte nám",
+    "howItWorks": "Jak to funguje"
+  },
+  "hero": {
+    "eyebrow": "Certifikovaní tlumočníci na vyžádání v České republice",
+    "title": "Hanioo mluví vaším jazykem.",
+    "subtitle": "Hanioo je nejdostupnější tlumočnická platforma na světě — propojuje lidi s certifikovanými jazykovými odborníky ve více než 100 jazycích v reálném čase. Ať už potřebujete lékařské, právní, obchodní nebo běžné tlumočení, okamžitě překlenujeme jazykovou bariéru.",
+    "ctaPrimary": "Získat nabídku zdarma",
+    "ctaSecondary": "Rezervovat tlumočníka",
+    "scroll": "Posunout",
+    "stat1Label": "Podporovaných jazyků",
+    "stat2Label": "Certifikovaných rodilých tlumočníků",
+    "stat3Label": "Dokončených firemních projektů",
+    "titleHighlight": "Kdekoli, kdykoli."
+  },
+  "companies": {
+    "title": "Důvěřují nám organizace po celé České republice i mimo ni"
+  },
+  "about": {
+    "eyebrow": "O nás",
+    "title": "Bouráme jazykové bariéry po celém světě",
+    "titleHighlight": "jazykové bariéry,",
+    "description": "Hanioo je platforma tlumočené komunikace nové generace, vytvořená tak, aby byl profesionální jazykový tlumočník okamžitě dostupný — kdekoli na světě. Propojujeme lidi s odbornými tlumočníky v oblasti zdravotnictví, práva, obchodu i komunitních služeb a odstraňujeme jazyk jako bariéru v důležité lidské komunikaci.",
+    "checklist": [
+      "Okamžitý přístup k certifikovaným tlumočníkům po celém světě",
+      "Více než 100 jazyků — lékařství, právo, obchod a komunita",
+      "Dostupné na Androidu — iOS již brzy",
+      "Bezpečná, soukromá a na ochranu dat dbající komunikace",
+      "Tlumočníci k dispozici nepřetržitě, každý den"
+    ],
+    "cta": "Připojte se k Hanioo ještě dnes",
+    "mission": "Poslání",
+    "missionText": "Zajistit, aby byly důležité rozhovory jasné, respektující a dostupné v každém jazyce.",
+    "vision": "Vize",
+    "visionText": "Zpřístupnit profesionální tlumočení stejně snadno jako telefonní hovor, kdekoli na světě.",
+    "experience": "Jazyků dostupných přes Hanioo",
+    "reach": "Podporovaných jazyků",
+    "imageAlt": "Hanioo propojuje lidi po celém světě prostřednictvím jazykového tlumočení"
+  },
+  "stats": {
+    "languages": "Podporovaných jazyků",
+    "translators": "Certifikovaných překladatelů",
+    "projects": "Dokončených projektů",
+    "satisfaction": "Spokojenost zákazníků"
+  },
+  "services": {
+    "eyebrow": "Co děláme",
+    "title": "Tlumočnické služby postavené na míru vašim potřebám",
+    "subtitle": "Každý tlumočník je vybrán podle vašeho prostředí, oboru a jazykové kombinace pro jasnou a přesnou komunikaci.",
+    "viewAll": "Zobrazit všechny služby",
+    "learnMore": "Zjistit více",
+    "items": {
+      "language-training": {
+        "title": "Jazykové kurzy",
+        "desc": "Strukturovaný jazykový koučink pro jednotlivce i týmy pro budování plynulosti v běžném i pracovním prostředí."
+      },
+      "translation-service": {
+        "title": "Překladatelské služby",
+        "desc": "Certifikovaný překlad dokumentů, přesný a včas, pro úřední, obchodní i osobní účely."
+      },
+      "offline-meetings-travel-booking": {
+        "title": "Osobní schůzky a rezervace cest",
+        "desc": "Osobní tlumočníci na schůzky a cesty, kompletně zařízeno a potvrzeno za vás."
+      },
+      "business-interpretation": {
+        "title": "Obchodní tlumočení",
+        "desc": "Sebejisté, oborově znalé tlumočení pro jednání, schůze představenstva a hovory s klienty."
+      },
+      "conference-interpretation": {
+        "title": "Konferenční tlumočení",
+        "desc": "Bezchybné simultánní i konsekutivní tlumočení pro summity a velké akce."
+      },
+      "medical-interpretation": {
+        "title": "Lékařské tlumočení",
+        "desc": "Přesné a citlivé tlumočení pro kliniky, nemocnice a konzultace s pacienty."
+      },
+      "community-interpretation": {
+        "title": "Komunitní tlumočení",
+        "desc": "Vstřícná a trpělivá tlumočnická podpora pro školy, kliniky a komunitní organizace."
+      },
+      "secure-private": {
+        "title": "Bezpečné a soukromé",
+        "desc": "Každý rozhovor zůstává důvěrný, díky šifrovaným relacím a prověřeným tlumočníkům."
+      }
+    }
+  },
+  "whyChooseUs": {
+    "eyebrow": "Proč si vybrat nás",
+    "title": "Kvalita, kterou lze měřit, služby, kterým můžete důvěřovat",
+    "items": {
+      "fast": {
+        "title": "Rychlé dodání",
+        "desc": "Jasné dodací lhůty, dodržované důsledně."
+      },
+      "certified": {
+        "title": "Certifikovaní překladatelé",
+        "desc": "Každý lingvista je prověřený, testovaný a certifikovaný."
+      },
+      "accuracy": {
+        "title": "100% přesnost",
+        "desc": "Každý projekt prochází kontrolou druhým lingvistou."
+      },
+      "pricing": {
+        "title": "Dostupné ceny",
+        "desc": "Transparentní nabídky bez skrytých poplatků."
+      },
+      "secure": {
+        "title": "Zabezpečené dokumenty",
+        "desc": "Důvěrné zacházení se šifrovaným úložištěm."
+      },
+      "native": {
+        "title": "Rodilí překladatelé",
+        "desc": "Překladatelé pracující pouze do svého mateřského jazyka."
+      },
+      "support": {
+        "title": "Podpora 24/7",
+        "desc": "Skutečný člověk, připravený kdykoli nás potřebujete."
+      },
+      "global": {
+        "title": "Celosvětové pokrytí",
+        "desc": "Více než 100 podporovaných jazyků ve všech časových pásmech."
+      }
+    }
+  },
+  "process": {
+    "eyebrow": "Jak to funguje",
+    "title": "Spojíme vás v několika jednoduchých krocích",
+    "steps": {
+      "upload": {
+        "title": "Najděte tlumočníka",
+        "desc": "Vyhledejte certifikovaného tlumočníka podle jazykové kombinace, oboru nebo lokality."
+      },
+      "analysis": {
+        "title": "Vyberte a zkontrolujte",
+        "desc": "Prohlédněte si kvalifikace, hodnocení a ceny a vyberte ideálního tlumočníka pro své potřeby."
+      },
+      "assign": {
+        "title": "Rezervujte okamžitě",
+        "desc": "Naplánujte relaci na budoucí termín nebo požádejte o okamžité propojení na vyžádání."
+      },
+      "quality": {
+        "title": "Propojte se a tlumočte",
+        "desc": "Setkejte se tváří v tvář přes náš zabezpečený videohovor či hlasový hovor v aplikaci, nebo si domluvte schůzku na místě."
+      },
+      "delivery": {
+        "title": "Relace dokončena",
+        "desc": "Dokončete schůzku, bezpečně zaplaťte a ohodnoťte službu svého tlumočníka."
+      }
+    }
+  },
+  "industries": {
+    "eyebrow": "Odvětví",
+    "title": "Specializovaný překlad pro každé odvětví",
+    "subtitle": "Hluboká odborná znalost napříč odvětvími, která hýbou Českou republikou i celým světem.",
+    "items": {
+      "healthcare": "Zdravotnictví",
+      "legal": "Právo",
+      "engineering": "Strojírenství",
+      "education": "Vzdělávání",
+      "government": "Státní správa",
+      "finance": "Finance",
+      "insurance": "Pojišťovnictví",
+      "construction": "Stavebnictví",
+      "realEstate": "Reality",
+      "travel": "Cestování",
+      "tourism": "Cestovní ruch",
+      "automobile": "Automobilový průmysl",
+      "it": "IT",
+      "software": "Software",
+      "manufacturing": "Výroba",
+      "media": "Média",
+      "retail": "Maloobchod",
+      "food": "Potravinářství",
+      "energy": "Energetika"
+    }
+  },
+  "languagesPage": {
+    "eyebrow": "Jazyky",
+    "title": "Více než 120 jazyků, jeden důvěryhodný partner",
+    "subtitle": "Vyhledejte nebo filtrujte a najděte svou jazykovou kombinaci.",
+    "searchPlaceholder": "Hledat jazyk...",
+    "popular": "Oblíbené jazyky",
+    "all": "Všechny jazyky",
+    "noResults": "Vašemu hledání neodpovídají žádné jazyky."
+  },
+  "testimonials": {
+    "eyebrow": "Reference",
+    "title": "Co říkají naši klienti",
+    "subtitle": "Skutečné reakce od firem i jednotlivců, kterým jsme pomohli komunikovat přes hranice."
+  },
+  "faq": {
+    "eyebrow": "Časté dotazy",
+    "title": "Často kladené otázky",
+    "searchPlaceholder": "Hledat v FAQ...",
+    "categories": {
+      "all": "Vše",
+      "general": "Obecné",
+      "pricing": "Ceny",
+      "process": "Proces",
+      "certification": "Certifikace"
+    },
+    "items": [
+      {
+        "q": "Jak dlouho trvá certifikovaný překlad?",
+        "a": "Většina standardních dokumentů je dodána do 24–48 hodin, v závislosti na délce a jazykové kombinaci.",
+        "category": "process"
+      },
+      {
+        "q": "Jsou vaše překlady uznávány státními institucemi?",
+        "a": "Ano, naše certifikované překlady jsou uznávány imigračními, právními a státními institucemi.",
+        "category": "certification"
+      },
+      {
+        "q": "Jak se počítá cena?",
+        "a": "Cena závisí na počtu slov, jazykové kombinaci, požadované certifikaci a době dodání. Nabízíme nezávaznou cenovou nabídku předem.",
+        "category": "pricing"
+      },
+      {
+        "q": "Nabízíte tlumočnické služby?",
+        "a": "Ano, poskytujeme tlumočení na místě i na dálku pro schůzky, návštěvy a akce.",
+        "category": "general"
+      },
+      {
+        "q": "Mohu sledovat stav své zakázky?",
+        "a": "Ano, každý klient dostává aktualizace v každé fázi — od nahrání souboru až po dodání.",
+        "category": "process"
+      },
+      {
+        "q": "Jaké formáty souborů přijímáte?",
+        "a": "Přijímáme PDF, Word, Excel, PowerPoint a většinu běžných obrazových formátů.",
+        "category": "general"
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Spojte se s námi",
+    "title": "Začněme s vaším tlumočnickým projektem",
+    "subtitle": "Řekněte nám o svých dokumentech a my vám do jednoho pracovního dne odpovíme s nezávaznou nabídkou.",
+    "form": {
+      "heading": "Kontaktujte nás",
+      "fullName": "Celé jméno",
+      "email": "E-mailová adresa",
+      "phone": "Telefonní číslo",
+      "country": "Země",
+      "service": "Požadovaná služba",
+      "servicePlaceholder": "Vyberte službu",
+      "upload": "Nahrát soubor",
+      "uploadHint": "Přetáhněte soubor nebo klikněte pro nahrání",
+      "message": "Zpráva",
+      "captcha": "Nejsem robot",
+      "submit": "Odeslat zprávu",
+      "success": "Děkujeme! Vaše zpráva byla odeslána.",
+      "errors": {
+        "required": "Toto pole je povinné",
+        "email": "Zadejte prosím platnou e-mailovou adresu",
+        "captcha": "Potvrďte prosím, že nejste robot"
+      }
+    },
+    "info": {
+      "address": "Adresa kanceláře",
+      "addressValue": "Václavské náměstí 12, 110 00 Praha 1, Česká republika",
+      "hours": "Otevírací doba",
+      "hoursValue": "Po - Pá: 8:30 - 18:00",
+      "phone": "Telefon",
+      "email": "E-mail"
+    }
+  },
+  "footer": {
+    "description": "Certifikované překladatelské a lokalizační služby propojující Českou republiku se světem.",
+    "quickLinks": "Rychlé odkazy",
+    "servicesTitle": "Služby",
+    "industriesTitle": "Odvětví",
+    "newsletter": "Newsletter",
+    "newsletterText": "Přihlaste se k odběru tipů na překlady a novinek z firmy.",
+    "newsletterPlaceholder": "Vaše e-mailová adresa",
+    "subscribe": "Odebírat",
+    "legal": "Právní informace",
+    "privacy": "Zásady ochrany osobních údajů",
+    "terms": "Obchodní podmínky",
+    "refund": "Zásady vracení peněz",
+    "rights": "Všechna práva vyhrazena."
+  },
+  "common": {
+    "backToTop": "Zpět nahoru",
+    "whatsapp": "Chat na WhatsApp",
+    "readMore": "Číst více",
+    "loading": "Načítání...",
+    "pageNotFound": "Stránka nenalezena",
+    "pageNotFoundText": "Stránka, kterou hledáte, neexistuje nebo byla přesunuta.",
+    "goHome": "Domů"
+  },
+  "pages": {
+    "about": {
+      "title": "O nás",
+      "subtitle": "Poznejte tým, který stojí za vašimi překlady."
+    },
+    "services": {
+      "title": "Naše služby",
+      "subtitle": "Komplexní jazyková řešení pro každou potřebu."
+    },
+    "industries": {
+      "title": "Odvětví, kterým sloužíme",
+      "subtitle": "Odborná znalost napříč každým odvětvím."
+    },
+    "blog": {
+      "title": "Blog",
+      "subtitle": "Postřehy o jazyce, kultuře a lokalizaci.",
+      "comingSoon": "Nové články již brzy."
+    },
+    "quote": {
+      "title": "Získejte nabídku zdarma",
+      "subtitle": "Řekněte nám o svém projektu a naši koordinátoři překladů se vám ozvou s nabídkou na míru, obvykle do jednoho pracovního dne.",
+      "form": {
+        "fullName": "Celé jméno",
+        "email": "E-mail",
+        "phone": "Telefonní číslo",
+        "service": "Požadovaná služba",
+        "servicePlaceholder": "Vyberte službu",
+        "message": "Podrobnosti projektu",
+        "submit": "Vyžádat nabídku",
+        "success": "Děkujeme! Vaše žádost o nabídku byla přijata. Náš tým se vám brzy ozve.",
+        "errors": {
+          "required": "Toto pole je povinné.",
+          "email": "Zadejte prosím platnou e-mailovou adresu."
+        }
+      }
+    },
+    "privacy": {
+      "title": "Zásady ochrany osobních údajů",
+      "subtitle": "Jak shromažďujeme, používáme a chráníme vaše údaje.",
+      "updated": "Naposledy aktualizováno: leden 2026",
+      "sections": [
+        {
+          "h": "Jaké informace shromažďujeme",
+          "p": "Shromažďujeme údaje, které nám poskytnete při žádosti o nabídku nebo odesílání dokumentů, jako je vaše jméno, kontaktní údaje a soubory, které se s námi rozhodnete sdílet."
+        },
+        {
+          "h": "Jak vaše informace používáme",
+          "p": "Vaše informace používáme výhradně k přípravě nabídek, přiřazení kvalifikovaných překladatelů, dodání hotové práce a odpovídání na vaše dotazy."
+        },
+        {
+          "h": "Důvěrnost dokumentů",
+          "p": "Všechny dokumenty jsou bezpečně uloženy a přístup k nim mají pouze lingvisté přímo přiřazení k vašemu projektu. Soubory jsou uchovávány pouze po dobu nezbytnou k dokončení a podpoře vaší zakázky."
+        },
+        {
+          "h": "Třetí strany",
+          "p": "Vaše osobní údaje neprodáváme. Dokumenty sdílíme pouze s prověřenými překladateli a recenzenty vázanými dohodami o mlčenlivosti."
+        },
+        {
+          "h": "Vaše práva",
+          "p": "Kdykoli můžete požádat o přístup ke svým osobním údajům, jejich opravu nebo výmaz, a to kontaktováním našeho týmu."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Obchodní podmínky",
+      "subtitle": "Podmínky, kterými se řídí používání našich služeb.",
+      "updated": "Naposledy aktualizováno: leden 2026",
+      "sections": [
+        {
+          "h": "Přijetí podmínek",
+          "p": "Vyžádáním nabídky nebo zadáním objednávky souhlasíte s podmínkami uvedenými na této stránce."
+        },
+        {
+          "h": "Dodání služby",
+          "p": "Dodací lhůty uvedené v nabídce jsou odhady založené na délce dokumentu, jeho složitosti a jazykové kombinaci a začínají běžet po potvrzení platby a zdrojových souborů."
+        },
+        {
+          "h": "Povinnosti klienta",
+          "p": "Klienti odpovídají za poskytnutí přesných zdrojových materiálů a za kontrolu finálních výstupů z hlediska specifických požadavků kontextu."
+        },
+        {
+          "h": "Duševní vlastnictví",
+          "p": "Vlastnictví přeloženého obsahu přechází na klienta po úplném zaplacení, s výjimkou dříve existujících překladových pamětí nebo glosářů uchovávaných pro účely kvality."
+        },
+        {
+          "h": "Omezení odpovědnosti",
+          "p": "Naše odpovědnost za jakýkoli nárok týkající se projektu je omezena na poplatky zaplacené za daný konkrétní překlad."
+        }
+      ]
+    },
+    "refund": {
+      "title": "Zásady vracení peněz",
+      "subtitle": "Náš přístup k revizím, vrácení peněz a spokojenosti zákazníků.",
+      "updated": "Naposledy aktualizováno: leden 2026",
+      "sections": [
+        {
+          "h": "Revize",
+          "p": "Pokud dodaný překlad neodpovídá dohodnutému zadání, nabízíme bezplatné revize do 7 dnů od dodání, bez dalších nákladů."
+        },
+        {
+          "h": "Nárok na vrácení peněz",
+          "p": "Vrácení peněz může být vydáno u zrušených projektů před přiřazením překladatele, nebo pokud dodaná práce po pokusech o revizi zásadně neodpovídá dohodnutému rozsahu."
+        },
+        {
+          "h": "Situace bez nároku na vrácení peněz",
+          "p": "Dokončené a dodané certifikované překlady, které odpovídají původnímu zadání, nemají po přijetí příslušným úřadem nárok na vrácení peněz."
+        },
+        {
+          "h": "Jak podat žádost",
+          "p": "Chcete-li požádat o revizi nebo vrácení peněz, kontaktujte náš tým podpory s referenčním číslem objednávky do 14 dnů od dodání."
+        }
+      ]
+    }
+  }
+}

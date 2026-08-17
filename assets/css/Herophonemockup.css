@@ -1,0 +1,219 @@
+.phone-mockup-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  animation: floatY 6s ease-in-out infinite;
+}
+
+.phone-rating-badge {
+  position: absolute;
+  top: 6px;
+  left: -18px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: #fff;
+  color: var(--color-primary);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 9px 16px;
+  border-radius: 999px;
+  box-shadow: 0 10px 26px rgba(4, 27, 71, 0.25);
+  white-space: nowrap;
+}
+.phone-rating-badge svg { color: #F5B301; flex-shrink: 0; }
+
+.phone-frame {
+  position: relative;
+  background: linear-gradient(160deg, #10254f 0%, #050f26 100%);
+  border-radius: 38px;
+  padding: 14px;
+  box-shadow:
+    0 30px 70px rgba(2, 8, 22, 0.55),
+    0 0 0 6px rgba(255, 255, 255, 0.04) inset;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.phone-notch {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 8px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 999px;
+  z-index: 2;
+}
+
+.phone-screen {
+  position: relative;
+  background: linear-gradient(180deg, #0b1c3f 0%, #081633 100%);
+  border-radius: 26px;
+  padding: 26px 16px 20px;
+  overflow: hidden;
+  min-height: 475px;
+}
+
+.phone-statusbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  opacity: 0.85;
+  margin-bottom: 18px;
+}
+.phone-statusbar-icons { letter-spacing: 2px; font-size: 8px; opacity: 0.6; }
+
+.phone-app-header {
+  text-align: center;
+  margin-bottom: 18px;
+}
+.phone-app-name {
+  display: block;
+  color: #fff;
+  font-weight: 800;
+  font-size: 17px;
+  letter-spacing: 0.02em;
+}
+.phone-app-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #7FE3A1;
+  font-size: 11.5px;
+  font-weight: 600;
+  margin-top: 3px;
+}
+.phone-app-status .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #34D399;
+  box-shadow: 0 0 6px #34D399;
+}
+
+.phone-interpreter-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+}
+.phone-avatar {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--gradient-primary, linear-gradient(135deg,#C41230,#0D1B3D));
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.phone-interpreter-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.phone-interpreter-name {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #fff;
+  font-size: 13.5px;
+  font-weight: 700;
+}
+.phone-interpreter-name svg { color: #4EA1FF; flex-shrink: 0; }
+.phone-interpreter-meta {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 11.5px;
+  font-weight: 500;
+}
+.phone-interpreter-meta svg { color: #F5B301; }
+
+.phone-chat {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chat-bubble {
+  max-width: 82%;
+  padding: 10px 14px;
+  border-radius: 16px;
+  font-size: 12.5px;
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+.chat-bubble-user {
+  align-self: flex-end;
+  background: var(--color-secondary, #C41230);
+  color: #fff;
+  border-bottom-right-radius: 4px;
+}
+
+.chat-bubble-typing {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  border-bottom-left-radius: 4px;
+  padding: 12px 16px;
+}
+.chat-bubble-typing span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.55);
+  animation: typingPulse 1.2s ease-in-out infinite;
+}
+.chat-bubble-typing span:nth-child(2) { animation-delay: 0.15s; }
+.chat-bubble-typing span:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes typingPulse {
+  0%, 60%, 100% { opacity: 0.35; transform: translateY(0); }
+  30% { opacity: 1; transform: translateY(-3px); }
+}
+
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Hanioo app dashboard details */
+.phone-app-name b { display: inline-grid; place-items: center; width: 17px; height: 17px; margin-right: 3px; border-radius: 6px; background: linear-gradient(135deg, #55b6ff, #2463db); font-size: 13px; }
+.phone-welcome { margin: 0 2px 14px; display: flex; flex-direction: column; gap: 3px; }
+.phone-welcome span { color: rgba(255, 255, 255, 0.58); font-size: 11px; font-weight: 600; }
+.phone-welcome strong { color: #fff; font-size: 16px; letter-spacing: -0.02em; }
+.phone-avatar { position: relative; }
+.phone-avatar-online { position: absolute; right: 0; bottom: 0; width: 10px; height: 10px; border: 2px solid #10254f; border-radius: 50%; background: #34d399; }
+.phone-video-icon { color: #77bcff; margin-left: auto; padding: 7px; box-sizing: content-box; border-radius: 10px; background: rgba(74, 161, 255, 0.13); }
+.phone-action-row { display: flex; gap: 8px; margin: -7px 0 15px; }
+.phone-action-row span { display: inline-flex; align-items: center; gap: 5px; color: rgba(255,255,255,.75); font-size: 10px; font-weight: 600; }
+.phone-action-row svg { color: #7fbcff; }
+.phone-bottom-nav { position: absolute; left: 16px; right: 16px; bottom: 14px; display: flex; justify-content: space-around; padding-top: 10px; border-top: 1px solid rgba(255,255,255,.09); }
+.phone-bottom-nav span { display: flex; flex-direction: column; align-items: center; gap: 3px; color: rgba(255,255,255,.43); font-size: 15px; line-height: 1; }
+.phone-bottom-nav span.active { color: #77bcff; }
+.phone-bottom-nav small { font-size: 8px; font-weight: 600; }
+
+@media (max-width: 992px) {
+  .phone-mockup-wrap { max-width: 260px; }
+  .phone-screen { min-height: 430px; }
+  .phone-rating-badge { left: 0; font-size: 12px; padding: 7px 13px; }
+}

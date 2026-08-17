@@ -1,0 +1,88 @@
+.float-btn {
+  position: fixed;
+  right: 24px;
+  width: 54px; height: 54px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff;
+  box-shadow: var(--shadow-medium);
+  z-index: 900;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.float-btn:hover { transform: scale(1.1) translateY(-2px); box-shadow: 0 16px 34px rgba(4,27,71,0.3); }
+
+.whatsapp-btn-container {
+  position: fixed;
+  right: 24px;
+  bottom: 94px;
+  z-index: 900;
+  width: 54px;
+  height: 54px;
+}
+
+.whatsapp-btn {
+  display: flex; align-items: center; justify-content: center;
+  color: #fff;
+  background: #25D366;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: var(--shadow-medium);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  animation: floatPulse 2.4s ease-in-out infinite;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1) translateY(-2px);
+  box-shadow: 0 16px 34px rgba(4,27,71,0.3);
+}
+
+.whatsapp-badge-247 {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: #ffffff;
+  color: #1cae63;
+  font-size: 8.5px;
+  font-weight: 800;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #25D366;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  z-index: 901;
+  animation: badgeBounceGlow 2.2s ease-in-out infinite;
+}
+
+@keyframes badgeBounceGlow {
+  0%, 100% { transform: scale(1) translateY(0); box-shadow: 0 4px 10px rgba(37, 211, 102, 0.35); }
+  50% { transform: scale(1.1) translateY(-2.5px); box-shadow: 0 8px 16px rgba(37, 211, 102, 0.6); }
+}
+
+.call-btn { bottom: 24px; background: #25D366; }
+.chatbot-btn { bottom: 164px; background: var(--gradient-accent); color: #fff; animation: chatbotPulse 2.6s ease-in-out infinite; }
+.ai-chat-btn { bottom: 228px; background: var(--color-primary); }
+.back-to-top-btn { bottom: 292px; background: var(--gradient-primary); }
+
+@keyframes floatPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.45), var(--shadow-medium); }
+  50% { box-shadow: 0 0 0 10px rgba(37, 211, 102, 0), var(--shadow-medium); }
+}
+
+@keyframes chatbotPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(214, 31, 58, 0.45), var(--shadow-medium); }
+  50% { box-shadow: 0 0 0 10px rgba(214, 31, 58, 0), var(--shadow-medium); }
+}
+
+@media (max-width: 600px) {
+  .float-btn { width: 48px; height: 48px; right: 16px; }
+  .call-btn { bottom: 16px; }
+  .whatsapp-btn-container { bottom: 80px; right: 16px; width: 48px; height: 48px; }
+  .whatsapp-badge-247 { width: 22px; height: 22px; font-size: 8px; top: -5px; right: -5px; }
+  .chatbot-btn { bottom: 144px; right: 16px; }
+  .ai-chat-btn { bottom: 202px; right: 16px; }
+  .back-to-top-btn { bottom: 260px; right: 16px; }
+}

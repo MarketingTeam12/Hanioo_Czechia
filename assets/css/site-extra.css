@@ -1,0 +1,546 @@
+/* ==========================================================================
+   site-extra.css — gap-filling styles for the PHP/vanilla-JS conversion.
+   Everything else lives in the CSS files ported 1:1 from the React app.
+   ========================================================================== */
+
+/* Generic [hidden] hardening (some ported CSS sets display:flex on the same
+   selector, which has equal specificity — this makes [hidden] always win) */
+[hidden] { display: none !important; }
+
+.icon { display: inline-block; vertical-align: middle; flex-shrink: 0; }
+
+/* ---------------------------------------------------------------------- */
+/* Header: mobile nav + language dropdown                                  */
+/* ---------------------------------------------------------------------- */
+.mobile-only { display: none; }
+.desktop-only { display: flex; }
+
+@media (max-width: 900px) {
+  .desktop-only { display: none; }
+  .mobile-only { display: block; }
+
+  .main-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: min(320px, 85vw);
+    height: 100vh;
+    background: #fff;
+    box-shadow: -8px 0 30px rgba(0,0,0,0.12);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 90px 24px 24px;
+    transition: right 0.3s ease;
+    z-index: 998;
+    overflow-y: auto;
+  }
+  .main-nav.open { right: 0; }
+  .main-nav .nav-link-btn { text-align: left; padding: 12px 4px; border-bottom: 1px solid var(--color-border, #eee); }
+
+  body.menu-open::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: rgba(4, 27, 71, 0.45);
+    z-index: 997;
+  }
+
+  .header-mobile-store-badges {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+}
+
+.menu-toggle { display: none; background: none; border: none; cursor: pointer; color: var(--color-primary, #0D1B3D); }
+@media (max-width: 900px) {
+  .menu-toggle { display: flex; align-items: center; justify-content: center; }
+}
+
+.lang-switch { position: relative; }
+.lang-btn {
+  display: flex; align-items: center; gap: 6px;
+  background: none; border: 1px solid var(--color-border, #e2e6ee);
+  border-radius: 999px; padding: 7px 14px; cursor: pointer;
+  font-size: 13.5px; color: var(--color-primary, #0D1B3D);
+}
+.lang-dropdown {
+  position: absolute; top: calc(100% + 8px); right: 0;
+  background: #fff; border-radius: 12px; box-shadow: 0 14px 34px rgba(0,0,0,0.16);
+  list-style: none; padding: 6px; margin: 0; min-width: 180px; z-index: 50;
+}
+.lang-dropdown li a {
+  display: flex; align-items: center; gap: 10px;
+  padding: 9px 12px; border-radius: 8px; font-size: 14px; color: var(--color-text, #1E293B);
+  white-space: nowrap;
+}
+.lang-dropdown li a:hover,
+.lang-dropdown li a.active { background: var(--color-bg, #F8FAFC); color: var(--color-primary, #0D1B3D); font-weight: 600; }
+.lang-flag-wrap { display: inline-flex; border-radius: 3px; overflow: hidden; box-shadow: 0 0 0 1px rgba(0,0,0,0.08); }
+
+.site-header.scrolled { box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+
+
+/* ---------------------------------------------------------------------- */
+/* Float buttons                                                            */
+/* ---------------------------------------------------------------------- */
+.float-btn {
+  position: fixed; right: 24px; width: 52px; height: 52px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--color-primary, #0D1B3D); color: #fff;
+  box-shadow: 0 10px 26px rgba(4,27,71,0.35); z-index: 900; border: none; cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.float-btn:hover { transform: translateY(-3px); }
+/* Stacking order bottom -> top: call, whatsapp, tawk.to chat widget, attention badge */
+.call-btn { bottom: 24px; background: #25D366; }
+.back-to-top-btn { bottom: 234px; }
+
+.whatsapp-btn-container { position: fixed; right: 24px; bottom: 94px; z-index: 900; }
+.whatsapp-btn {
+  display: flex; align-items: center; justify-content: center;
+  width: 52px; height: 52px; border-radius: 50%; background: #25D366; color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  box-shadow: 0 10px 26px rgba(37,211,102,0.4);
+}
+.whatsapp-support-label {
+  position: absolute;
+  right: -7px;
+  bottom: -5px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  border-radius: 0;
+  padding: 0;
+  text-shadow: 0 1px 4px rgba(4, 27, 71, 0.7);
+  animation: supportBadgeFloat 1.9s ease-in-out infinite;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+@keyframes supportBadgeFloat {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-3px) scale(1.06); }
+}
+
+.tawk-attention {
+  position: fixed;
+  right: 24px;
+  bottom: 0;
+  z-index: 2147482000;
+  width: 82px;
+  height: 92px;
+  pointer-events: none;
+}
+
+.tawk-attention[hidden] { display: none !important; }
+
+.tawk-attention__badge {
+  position: absolute;
+  right: -4px;
+  bottom: 57px;
+  display: block;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  text-shadow: 0 2px 3px rgba(4, 27, 71, 0.45);
+  transform: rotate(-24deg);
+  transform-origin: right bottom;
+  box-shadow: none;
+  pointer-events: none;
+}
+
+.tawk-attention__card {
+  position: relative;
+  width: 100%;
+  padding: 18px 16px;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid rgba(4, 27, 71, 0.08);
+  box-shadow: 0 18px 42px rgba(4, 27, 71, 0.18);
+  color: #172036;
+}
+
+.tawk-attention__dismiss,
+.tawk-attention__quick {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.tawk-attention__dismiss {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 16px auto;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #f4f7fb;
+  color: #7b8498;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.tawk-attention__message {
+  padding-right: 4px;
+}
+
+.tawk-attention__message p {
+  margin: 0 0 14px;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #1f2937;
+}
+
+.tawk-attention__message p:last-child { margin-bottom: 0; }
+
+.tawk-attention__message a {
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.tawk-attention__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 9px;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.tawk-attention__quick {
+  width: calc(100% - 38px);
+  min-height: 34px;
+  padding: 6px 14px;
+  border-radius: 9px;
+  border: 2px solid #00a95c;
+  background: linear-gradient(180deg, #ffffff 0%, #f9fbff 100%);
+  color: #00a95c;
+  font-size: 13px;
+  line-height: 1.3;
+  font-weight: 500;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 169, 92, 0.12);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+.tawk-attention__quick:hover,
+.tawk-attention__quick:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0, 169, 92, 0.16);
+  background: #ffffff;
+}
+
+@media (max-width: 640px) {
+  .float-btn, .whatsapp-btn-container { right: 16px; }
+  .float-btn { width: 46px; height: 46px; }
+  .whatsapp-btn { width: 46px; height: 46px; }
+  .call-btn { bottom: 16px; }
+  .whatsapp-btn-container { bottom: 80px; }
+  .back-to-top-btn { bottom: 200px; }
+  .tawk-attention {
+    right: 32px;
+    bottom: 166px;
+    width: min(286px, calc(100vw - 64px));
+  }
+  .tawk-attention__badge {
+    right: 16px;
+    bottom: 62px;
+  }
+  .tawk-attention__card {
+    padding: 18px 16px;
+  }
+  .tawk-attention__message p {
+    font-size: 13px;
+  }
+  .tawk-attention__quick {
+    min-height: 34px;
+    font-size: 12px;
+  }
+}
+
+/* ---------------------------------------------------------------------- */
+/* Popup form show/hide + misc (structure comes from PopupForm.css)         */
+/* ---------------------------------------------------------------------- */
+.popup-backdrop { display: flex; }
+.popup-error {
+  background: #FEECEC; color: #C0392B; border-radius: 8px;
+  padding: 10px 14px; font-size: 13px; margin-bottom: 14px;
+}
+.recaptcha-real-wrapper { margin: 14px 0; }
+.req-star { color: #D7141A; }
+
+/* ---------------------------------------------------------------------- */
+/* Success popup (Contact / Quote)                                          */
+/* ---------------------------------------------------------------------- */
+.success-popup-backdrop { display: flex; }
+
+/* ---------------------------------------------------------------------- */
+/* FAQ filters (structure/colors come from FaqAccordion.css)                */
+/* ---------------------------------------------------------------------- */
+.faq-filters { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; margin-bottom: 28px; }
+.faq-search { position: relative; flex: 1; min-width: 220px; display: flex; align-items: center; gap: 8px;
+  background: #fff; border: 1px solid var(--color-border, #e2e6ee); border-radius: 999px; padding: 10px 16px; color: var(--color-text-light, #64748B); }
+.faq-search input { border: none; outline: none; flex: 1; font-size: 14px; background: transparent; }
+.faq-categories { display: flex; flex-wrap: wrap; gap: 8px; }
+.faq-categories button {
+  border: 1px solid var(--color-border, #e2e6ee); background: #fff; border-radius: 999px;
+  padding: 7px 16px; font-size: 13px; color: var(--color-text, #1E293B); cursor: pointer; transition: all 0.2s ease;
+}
+.faq-categories button.active,
+.faq-categories button:hover { background: var(--color-primary, #0D1B3D); color: #fff; border-color: var(--color-primary, #0D1B3D); }
+.faq-question { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 18px 4px; background: none; border: none; text-align: left; cursor: pointer; font-size: 15.5px; font-weight: 600; color: var(--color-primary, #0D1B3D); }
+
+/* ---------------------------------------------------------------------- */
+/* Simple FAQ (service-detail glass-card accordion)                         */
+/* ---------------------------------------------------------------------- */
+.simple-faq-chevron { transition: transform 0.25s ease; }
+
+/* ---------------------------------------------------------------------- */
+/* Site carousel (replaces Swiper for testimonials)                        */
+/* ---------------------------------------------------------------------- */
+.site-carousel { overflow: hidden; position: relative; }
+.site-carousel-track { display: flex; gap: 20px; transition: transform 0.4s ease; }
+.site-carousel-slide { flex: 0 0 calc(33.333% - 14px); min-width: 0; }
+@media (max-width: 1080px) { .site-carousel-slide { flex-basis: calc(50% - 10px); } }
+@media (max-width: 768px) { .site-carousel-slide { flex-basis: 100%; } }
+.star-filled { color: #F5B400; }
+.star-empty { color: #E2E6EE; }
+
+/* ---------------------------------------------------------------------- */
+/* Not-found icon color (only style not covered by NotFound.css)           */
+/* ---------------------------------------------------------------------- */
+.not-found-icon { color: var(--color-primary, #0D1B3D); }
+
+/* ---------------------------------------------------------------------- */
+/* Footer heading icon alignment (small helper wrapper)                    */
+/* ---------------------------------------------------------------------- */
+.footer-heading-ico { display: inline-flex; align-items: center; margin-right: 6px; }
+.footer-icon-list-ico { display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; border-radius: 50%; margin-right: 8px; color: #fff; }
+.footer-icon-list-ico--blue { background: #C41230; }
+.footer-icon-list-ico--green { background: #0F9D58; }
+.footer-icon-list-ico--pink { background: #D7141A; }
+.footer-icon-list-ico--gold { background: #E8A317; }
+.footer-check-list-ico { flex-shrink: 0; margin-right: 8px; color: #0F9D58; }
+
+/* ---------------------------------------------------------------------- */
+/* Blog card link arrow spacing                                            */
+/* ---------------------------------------------------------------------- */
+.blog-link-arrow { vertical-align: middle; margin-left: 2px; }
+
+/* ---------------------------------------------------------------------- */
+/* service detail top layout (no direct component css previously; ported
+   inline styles kept most of it, this covers the responsive stack)        */
+/* ---------------------------------------------------------------------- */
+.service-detail-top { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center; }
+.service-detail-top-image { border-radius: 14px; overflow: hidden; aspect-ratio: 4/3; box-shadow: var(--shadow-medium, 0 12px 30px rgba(0,0,0,0.12)); display: block; }
+@media (max-width: 800px) {
+  .service-detail-top { grid-template-columns: 1fr; }
+  .ceo-block { grid-template-columns: 1fr !important; }
+}
+
+/* Dismissible help popup positioned just above the existing Tawk.to icon. */
+.tawk-attention {
+  position: fixed;
+  right: 24px;
+  bottom: 55%;
+  z-index: 2147482000;
+  width: auto;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+.tawk-attention__card {
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  pointer-events: auto;
+}
+.tawk-attention__message {
+  background: #ffffff;
+  padding: 18px 24px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(4, 27, 71, 0.12);
+  position: relative;
+  max-width: 320px;
+}
+.tawk-attention__message p {
+  margin: 0;
+  color: #172036;
+  font-size: 14.5px;
+  font-weight: 500;
+  line-height: 1.5;
+  white-space: normal;
+}
+.tawk-attention__message a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 600;
+}
+.tawk-attention__message a:hover {
+  text-decoration: underline;
+}
+.tawk-attention__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  width: 100%;
+}
+.tawk-attention__quick {
+  min-height: 38px;
+  padding: 8px 18px;
+  border: 2px solid #1a73e8;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #1a73e8;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(26, 115, 232, 0.08);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.tawk-attention__quick:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(26, 115, 232, 0.16);
+  background: #f4f8fe;
+}
+.tawk-attention__dismiss {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 24px;
+  height: 24px;
+  border: 0;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #52617a;
+  font-size: 16px;
+  line-height: 22px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.tawk-attention__launcher {
+  display: block;
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+.we-are-here-wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  pointer-events: none;
+}
+.we-are-here-svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+.we-are-here-text-path {
+  fill: #ffffff;
+  font-family: 'Montserrat', 'Arial Rounded MT Bold', sans-serif;
+  font-weight: 800;
+  font-size: 14.5px;
+  letter-spacing: 0.2px;
+  pointer-events: auto;
+}
+.we-are-here-text-path textPath {
+  stroke: #0F9D58;
+  stroke-width: 4px;
+  paint-order: stroke fill;
+  stroke-linejoin: round;
+}
+.waving-hand {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 120px;
+  text-align: center;
+  font-size: 26px;
+  animation: waveHand 1.5s ease-in-out infinite alternate;
+  pointer-events: auto;
+}
+.waving-line-left, .waving-line-right {
+  animation: wavePulse 1.2s ease-in-out infinite;
+}
+.waving-line-left {
+  animation-delay: 0.2s;
+}
+@keyframes wavePulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+.tawk-launcher-dismiss {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  color: #000000;
+  cursor: pointer;
+  font-weight: bold;
+  pointer-events: auto;
+  z-index: 20;
+  padding: 0;
+  line-height: 1;
+}
+@keyframes waveHand {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(20deg); }
+}
+
+@media (max-width: 640px) {
+  .tawk-attention {
+    right: 16px;
+    bottom: 72px;
+  }
+}
+
+/* ---------------------------------------------------------------------- */
+/* Site-wide scroll-reveal animations (Czechia theme)                      */
+/* ---------------------------------------------------------------------- */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1), transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal-up.is-visible { opacity: 1; transform: translateY(0); }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-up { opacity: 1 !important; transform: none !important; transition: none !important; }
+}
+
+.btn, .card, .service-card, .glass-card, [class*="-card"] { transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.25s ease, background 0.25s ease; }
+.card:hover, .service-card:hover, .glass-card:hover, [class*="-card"]:hover { transform: translateY(-6px); box-shadow: var(--shadow-medium); }

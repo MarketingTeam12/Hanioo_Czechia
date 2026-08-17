@@ -1,0 +1,54 @@
+.faq-block { max-width: 780px; margin: 0 auto; }
+
+.faq-filters { margin-bottom: 32px; }
+.faq-search {
+  display: flex; align-items: center; gap: 10px;
+  background: #fff; border: 1.5px solid var(--color-border);
+  border-radius: 999px; padding: 12px 20px; margin-bottom: 16px;
+  color: var(--color-text-light);
+  box-shadow: var(--shadow-soft);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.faq-search:focus-within { border-color: var(--color-primary); box-shadow: var(--shadow-medium); }
+.faq-search input { border: none; outline: none; flex: 1; font-size: 14px; font-family: inherit; background: transparent; }
+
+.faq-categories { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+.faq-categories button {
+  padding: 8px 16px; border-radius: 999px; font-size: 13px; font-weight: 500;
+  background: #fff; border: 1px solid var(--color-border); color: var(--color-text-light);
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+.faq-categories button:hover { border-color: var(--color-primary); color: var(--color-primary); }
+.faq-categories button.active { background: var(--color-primary); color: #fff; border-color: var(--color-primary); }
+
+.faq-list { display: flex; flex-direction: column; gap: 14px; }
+
+.faq-item {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.faq-item.open { border-color: var(--color-primary); box-shadow: var(--shadow-medium); }
+
+.faq-question {
+  width: 100%; display: flex; align-items: center; justify-content: space-between;
+  gap: 16px; padding: 20px 22px; text-align: left; font-size: 15.5px; font-weight: 600; color: var(--color-text);
+}
+
+.faq-chevron {
+  flex-shrink: 0;
+  width: 30px; height: 30px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%;
+  background: var(--color-bg);
+  color: var(--color-secondary);
+  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
+.faq-item.open .faq-chevron { transform: rotate(180deg); background: var(--color-primary); color: #fff; }
+
+.faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+.faq-item.open .faq-answer { max-height: 300px; }
+.faq-answer p { padding: 0 22px 20px; font-size: 14px; color: var(--color-text-light); line-height: 1.7; }

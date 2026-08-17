@@ -1,0 +1,133 @@
+.contact-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 40px; align-items: start; }
+
+.contact-form-heading { font-size: 24px; font-weight: 700; color: var(--color-primary); margin-bottom: 20px; }
+
+.contact-info-col { display: flex; flex-direction: column; gap: 16px; }
+.contact-info-card {
+  display: flex; gap: 16px; align-items: flex-start;
+  padding: 20px; color: var(--color-secondary);
+}
+.contact-info-card h4 { font-size: 14px; color: var(--color-text); margin-bottom: 4px; }
+.contact-info-card p { font-size: 13.5px; color: var(--color-text-light); line-height: 1.5; }
+
+.whatsapp-cta { background: #25D366; box-shadow: 0 10px 24px rgba(37,211,102,0.3); margin-top: 4px; }
+.whatsapp-cta:hover { background: #20bd5a; }
+
+.contact-map { border-radius: var(--radius-md); overflow: hidden; margin-top: 4px; }
+
+.contact-form { padding: 36px; display: flex; flex-direction: column; gap: 18px; }
+
+.form-success {
+  background: rgba(46, 204, 113, 0.12); color: #1e8449;
+  border: 1px solid rgba(46,204,113,0.3);
+  padding: 12px 16px; border-radius: var(--radius-sm); font-size: 14px;
+}
+
+.form-row.two { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+
+.form-field { display: flex; flex-direction: column; gap: 6px; }
+.form-field label { font-size: 13.5px; font-weight: 600; color: var(--color-text); }
+.form-field input, .form-field select, .form-field textarea {
+  padding: 12px 14px; border-radius: var(--radius-sm);
+  border: 1.5px solid var(--color-primary); font-family: inherit; font-size: 14px;
+  background: #fff; color: var(--color-primary);
+}
+.form-field input::placeholder, .form-field select::placeholder, .form-field textarea::placeholder {
+  color: #4A5568;
+  opacity: 1;
+}
+.form-field input:focus, .form-field select:focus, .form-field textarea:focus {
+  border-color: var(--color-primary); outline: none;
+  box-shadow: 0 0 0 3px rgba(4, 27, 71, 0.15);
+}
+.field-error { font-size: 12px; color: #e53e3e; }
+
+.upload-label {
+  display: flex; align-items: center; gap: 10px;
+  border: 1.5px dashed var(--color-border); border-radius: var(--radius-sm);
+  padding: 16px; color: var(--color-text-light); font-size: 13.5px; cursor: pointer;
+}
+.upload-input { position: absolute; width: 1px; height: 1px; opacity: 0; overflow: hidden; }
+
+.captcha-row { display: flex; align-items: center; gap: 10px; font-size: 13.5px; color: var(--color-text-light); }
+
+.submit-btn { align-self: flex-start; margin-top: 6px; }
+
+@media (max-width: 900px) {
+  .contact-grid { grid-template-columns: 1fr; }
+  .form-row.two { grid-template-columns: 1fr; }
+}
+
+/* Zoho CRM Web Form Styling to match the website style */
+.zcwf_row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 15px 0px;
+}
+.zcwf_col_lab {
+  width: 100% !important;
+  font-size: 13.5px !important;
+  font-weight: 600 !important;
+  color: var(--color-text) !important;
+  font-family: inherit !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.zcwf_col_fld {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.zcwf_col_fld input[type=text],
+.zcwf_col_fld textarea,
+.zcwf_col_fld select {
+  width: 100% !important;
+  padding: 12px 14px !important;
+  border-radius: var(--radius-sm) !important;
+  border: 1.5px solid var(--color-primary) !important;
+  font-family: inherit !important;
+  font-size: 14px !important;
+  background: #fff !important;
+  color: var(--color-primary) !important;
+}
+.zcwf_col_fld input[type=text]:focus,
+.zcwf_col_fld textarea:focus,
+.zcwf_col_fld select:focus {
+  border-color: var(--color-primary) !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(4, 27, 71, 0.15) !important;
+}
+.zcwf_button {
+  max-width: none !important;
+}
+
+
+.quote-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.quote-image-wrap {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-medium);
+}
+
+.quote-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  min-height: 380px;
+}
+
+@media (max-width: 900px) {
+  .quote-layout { grid-template-columns: 1fr; }
+  .quote-image-wrap { order: -1; }
+  .quote-image { min-height: 240px; }
+}

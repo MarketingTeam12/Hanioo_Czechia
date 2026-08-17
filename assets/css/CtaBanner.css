@@ -1,0 +1,155 @@
+.cta-banner { background: var(--gradient-primary); }
+.cta-inner {
+  display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap;
+  border-radius: var(--radius-lg);
+}
+.cta-inner h2 { color: #fff; font-size: clamp(22px, 3vw, 30px); margin-bottom: 8px; max-width: 480px; }
+.cta-inner p { color: rgba(255,255,255,0.85); font-size: 14.5px; max-width: 460px; }
+
+/* ================================================================== */
+/* Premium pre-footer CTA banner — site theme (navy/red/gold).        */
+/* ================================================================== */
+.cta-banner-pro {
+  position: relative;
+  overflow: hidden;
+  padding: 56px 0;
+  margin-bottom: 28px;
+  background:
+    radial-gradient(120% 160% at 8% -10%, rgba(212,20,38,0.55) 0%, transparent 55%),
+    radial-gradient(90% 130% at 100% 120%, rgba(199,154,62,0.25) 0%, transparent 60%),
+    linear-gradient(135deg, #0D1B3D 0%, #14235A 45%, #3A0B14 100%);
+}
+
+.cta-banner-pro-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  pointer-events: none;
+  z-index: 0;
+  animation: pageHeroGlowPulse 9s ease-in-out infinite;
+}
+.cta-banner-pro-glow--gold {
+  width: 380px; height: 380px;
+  top: -16%; right: 4%;
+  background: radial-gradient(circle, rgba(199,154,62,0.35), transparent 70%);
+}
+.cta-banner-pro-glow--white {
+  width: 320px; height: 320px;
+  bottom: -20%; left: 6%;
+  background: radial-gradient(circle, rgba(255,255,255,0.10), transparent 70%);
+  animation-delay: 3s;
+}
+
+.cta-banner-pro-dots {
+  position: absolute;
+  inset: -20px;
+  z-index: 0;
+  background-image: radial-gradient(rgba(255,255,255,0.14) 1.4px, transparent 1.4px);
+  background-size: 30px 30px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.cta-banner-pro-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.cta-banner-pro-content { max-width: 640px; }
+
+.cta-banner-pro-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 16px 7px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(199,154,62,0.5);
+  color: #EED08A;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.cta-banner-pro-content h2 {
+  color: #fff;
+  font-size: clamp(26px, 3.6vw, 38px);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+
+.cta-banner-pro-content p {
+  color: rgba(255,255,255,0.82);
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 520px;
+  margin-bottom: 20px;
+}
+
+.cta-banner-pro-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.cta-banner-pro-tags span {
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.16);
+  color: #fff;
+  font-size: 12.5px;
+  font-weight: 700;
+}
+
+.cta-banner-pro-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+.cta-banner-pro-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 24px;
+  border-radius: 999px;
+  font-size: 14.5px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+.cta-banner-pro-btn--primary {
+  background: linear-gradient(90deg, #D7141A, #C79A3E);
+  color: #fff;
+  box-shadow: 0 10px 26px rgba(212,20,38,0.35);
+}
+.cta-banner-pro-btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(212,20,38,0.45);
+}
+.cta-banner-pro-btn--ghost {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.35);
+  color: #fff;
+}
+.cta-banner-pro-btn--ghost:hover {
+  background: rgba(255,255,255,0.16);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .cta-banner-pro-inner { flex-direction: column; align-items: flex-start; }
+  .cta-banner-pro-actions { width: 100%; }
+  .cta-banner-pro-btn { flex: 1; justify-content: center; }
+}

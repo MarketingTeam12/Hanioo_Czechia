@@ -1,0 +1,418 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "industries": "Industries",
+    "languages": "Languages",
+    "testimonials": "Testimonials",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "contact": "Contact",
+    "getQuote": "Get Quote",
+    "callUs": "Call Us",
+    "howItWorks": "How It Works"
+  },
+  "hero": {
+    "eyebrow": "On-Demand Certified Interpreters in Czechia",
+    "title": "Hanioo Speaks Your Language.",
+    "subtitle": "Hanioo is the world's most accessible interpretation platform — connecting people with certified language experts across 100+ languages in real time. Whether you need medical, legal, business, or everyday interpretation, we bridge the gap instantly.",
+    "ctaPrimary": "Get Free Quote",
+    "ctaSecondary": "Book an Interpreter",
+    "scroll": "Scroll",
+    "stat1Label": "Languages Supported",
+    "stat2Label": "Certified Native Interpreters",
+    "stat3Label": "Corporate Projects Completed",
+    "titleHighlight": "Anywhere, Anytime."
+  },
+  "companies": {
+    "title": "Trusted by organisations across Czechia and beyond"
+  },
+  "about": {
+    "eyebrow": "About Us",
+    "title": "Breaking language barriers, globally",
+    "titleHighlight": "language barriers,",
+    "description": "Hanioo is the next-generation interpreted communication platform, built to make professional language interpretation instantly accessible — anywhere in the world. We connect people with expert interpreters across medical, legal, business, and community settings, removing language as a barrier to essential human interaction.",
+    "checklist": [
+      "Instant access to certified interpreters worldwide",
+      "100+ languages — medical, legal, business & community",
+      "Available on Android — iOS coming soon",
+      "Secure, private, and HIPAA-aware communication",
+      "Interpreters available around the clock, every day"
+    ],
+    "cta": "Join Hanioo Today",
+    "mission": "Mission",
+    "missionText": "To make essential conversations clear, respectful and accessible in every language.",
+    "vision": "Vision",
+    "visionText": "To make professional interpretation as easy to access as a phone call, anywhere in the world.",
+    "experience": "Languages available through Hanioo",
+    "reach": "Languages supported",
+    "imageAlt": "Hanioo connects people worldwide through language interpretation"
+  },
+  "stats": {
+    "languages": "Languages Supported",
+    "translators": "Certified Translators",
+    "projects": "Projects Completed",
+    "satisfaction": "Customer Satisfaction"
+  },
+  "services": {
+    "eyebrow": "What We Do",
+    "title": "Interpretation services built around your needs",
+    "subtitle": "Every interpreter is matched to your setting, industry, and language pair for clear, accurate communication.",
+    "viewAll": "View All Services",
+    "learnMore": "Learn More",
+    "items": {
+      "language-training": {
+        "title": "Language Training",
+        "desc": "Structured language coaching for individuals and teams to build everyday and workplace fluency."
+      },
+      "translation-service": {
+        "title": "Translation Service",
+        "desc": "Certified document translation, accurate and on time, for official, business, and personal use."
+      },
+      "offline-meetings-travel-booking": {
+        "title": "Offline Meetings & Travel Booking",
+        "desc": "In-person interpreters for meetings and travel, arranged and confirmed for you end-to-end."
+      },
+      "business-interpretation": {
+        "title": "Business Interpretation",
+        "desc": "Confident, industry-fluent interpretation for negotiations, board meetings, and client calls."
+      },
+      "conference-interpretation": {
+        "title": "Conference Interpretation",
+        "desc": "Flawless simultaneous and consecutive interpretation for summits and large events."
+      },
+      "medical-interpretation": {
+        "title": "Medical Interpretation",
+        "desc": "Accurate, compassionate interpretation for clinics, hospitals, and patient consultations."
+      },
+      "community-interpretation": {
+        "title": "Community Interpretation",
+        "desc": "Warm, patient interpretation support for schools, clinics, and community organisations."
+      },
+      "secure-private": {
+        "title": "Secure & Private",
+        "desc": "Every conversation stays confidential, with encrypted sessions and vetted interpreters."
+      }
+    }
+  },
+  "whyChooseUs": {
+    "eyebrow": "Why Choose Us",
+    "title": "Quality you can measure, service you can trust",
+    "items": {
+      "fast": {
+        "title": "Fast Delivery",
+        "desc": "Clear turnaround times, met consistently."
+      },
+      "certified": {
+        "title": "Certified Translators",
+        "desc": "Every linguist is vetted, tested, and certified."
+      },
+      "accuracy": {
+        "title": "100% Accuracy",
+        "desc": "Every project passes a second-linguist review."
+      },
+      "pricing": {
+        "title": "Affordable Pricing",
+        "desc": "Transparent quotes with no hidden fees."
+      },
+      "secure": {
+        "title": "Secure Documents",
+        "desc": "Confidential handling with encrypted storage."
+      },
+      "native": {
+        "title": "Native Translators",
+        "desc": "Translators working only into their mother tongue."
+      },
+      "support": {
+        "title": "24/7 Support",
+        "desc": "A real person, ready whenever you need us."
+      },
+      "global": {
+        "title": "Global Coverage",
+        "desc": "100+ languages supported across every time zone."
+      }
+    }
+  },
+  "process": {
+    "eyebrow": "How It Works",
+    "title": "Connecting you in a few simple steps",
+    "steps": {
+      "upload": {
+        "title": "Find an Interpreter",
+        "desc": "Search for a certified interpreter based on your language pair, industry, or location."
+      },
+      "analysis": {
+        "title": "Select & Review",
+        "desc": "View qualifications, reviews, and rates to choose the perfect interpreter for your needs."
+      },
+      "assign": {
+        "title": "Book Instantly",
+        "desc": "Schedule your session for a future date or request an on-demand connection immediately."
+      },
+      "quality": {
+        "title": "Connect & Interpret",
+        "desc": "Meet face-to-face via our secure in-app video, voice call, or arrange on-site meetings."
+      },
+      "delivery": {
+        "title": "Session Complete",
+        "desc": "Finish your meeting, complete the payment securely, and rate your interpreter's service."
+      }
+    }
+  },
+  "industries": {
+    "eyebrow": "Industries",
+    "title": "Specialist translation for every sector",
+    "subtitle": "Deep subject-matter expertise across the industries that keep Czechia — and the world — moving.",
+    "items": {
+      "healthcare": "Healthcare",
+      "legal": "Legal",
+      "engineering": "Engineering",
+      "education": "Education",
+      "government": "Government",
+      "finance": "Finance",
+      "insurance": "Insurance",
+      "construction": "Construction",
+      "realEstate": "Real Estate",
+      "travel": "Travel",
+      "tourism": "Tourism",
+      "automobile": "Automobile",
+      "it": "IT",
+      "software": "Software",
+      "manufacturing": "Manufacturing",
+      "media": "Media",
+      "retail": "Retail",
+      "food": "Food",
+      "energy": "Energy"
+    }
+  },
+  "languagesPage": {
+    "eyebrow": "Languages",
+    "title": "120+ languages, one trusted partner",
+    "subtitle": "Search or filter to find your language pair.",
+    "searchPlaceholder": "Search a language...",
+    "popular": "Popular Languages",
+    "all": "All Languages",
+    "noResults": "No languages match your search."
+  },
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "title": "What our clients say",
+    "subtitle": "Real feedback from businesses and individuals we've helped communicate across borders."
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions",
+    "searchPlaceholder": "Search FAQs...",
+    "categories": {
+      "all": "All",
+      "general": "General",
+      "pricing": "Pricing",
+      "process": "Process",
+      "certification": "Certification"
+    },
+    "items": [
+      {
+        "q": "How long does a certified translation take?",
+        "a": "Most standard documents are delivered within 24-48 hours, depending on length and language pair.",
+        "category": "process"
+      },
+      {
+        "q": "Are your translations accepted by government bodies?",
+        "a": "Yes, our certified translations are accepted by immigration, legal, and government institutions.",
+        "category": "certification"
+      },
+      {
+        "q": "How is pricing calculated?",
+        "a": "Pricing depends on word count, language pair, certification needs, and turnaround time. We provide a free quote upfront.",
+        "category": "pricing"
+      },
+      {
+        "q": "Do you offer interpretation services?",
+        "a": "Yes, we provide both on-site and remote interpretation for meetings, appointments, and events.",
+        "category": "general"
+      },
+      {
+        "q": "Can I track the status of my order?",
+        "a": "Yes, every client receives updates at each stage from upload to delivery.",
+        "category": "process"
+      },
+      {
+        "q": "What file formats do you accept?",
+        "a": "We accept PDF, Word, Excel, PowerPoint, and most common image formats.",
+        "category": "general"
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Get In Touch",
+    "title": "Let's start your interpreter project",
+    "subtitle": "Tell us about your documents and we'll respond with a free quote within one business day.",
+    "form": {
+      "heading": "Contact Us",
+      "fullName": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "country": "Country",
+      "service": "Service Needed",
+      "servicePlaceholder": "Select a service",
+      "upload": "Upload File",
+      "uploadHint": "Drag & drop or click to upload",
+      "message": "Message",
+      "captcha": "I'm not a robot",
+      "submit": "Send Message",
+      "success": "Thank you! Your message has been sent.",
+      "errors": {
+        "required": "This field is required",
+        "email": "Please enter a valid email address",
+        "captcha": "Please confirm you're not a robot"
+      }
+    },
+    "info": {
+      "address": "Office Address",
+      "addressValue": "Wenceslas Square 12, 110 00 Prague 1, Czechia",
+      "hours": "Business Hours",
+      "hoursValue": "Mon - Fri: 8:30 AM - 6:00 PM",
+      "phone": "Phone",
+      "email": "Email"
+    }
+  },
+  "footer": {
+    "description": "Certified translation and localisation services connecting Czechia to the world.",
+    "quickLinks": "Quick Links",
+    "servicesTitle": "Services",
+    "industriesTitle": "Industries",
+    "newsletter": "Newsletter",
+    "newsletterText": "Subscribe for translation tips and company news.",
+    "newsletterPlaceholder": "Your email address",
+    "subscribe": "Subscribe",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "refund": "Refund Policy",
+    "rights": "All rights reserved."
+  },
+  "common": {
+    "backToTop": "Back to top",
+    "whatsapp": "Chat on WhatsApp",
+    "readMore": "Read More",
+    "loading": "Loading...",
+    "pageNotFound": "Page Not Found",
+    "pageNotFoundText": "The page you're looking for doesn't exist or has moved.",
+    "goHome": "Go Home"
+  },
+  "pages": {
+    "about": {
+      "title": "About Us",
+      "subtitle": "Get to know the team behind your translations."
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Comprehensive language solutions for every need."
+    },
+    "industries": {
+      "title": "Industries We Serve",
+      "subtitle": "Specialist expertise across every sector."
+    },
+    "blog": {
+      "title": "Blog",
+      "subtitle": "Insights on language, culture, and localisation.",
+      "comingSoon": "New articles coming soon."
+    },
+    "quote": {
+      "title": "Get a Free Quote",
+      "subtitle": "Tell us about your project and our translation coordinators will get back to you with a tailored quote, usually within one business day.",
+      "form": {
+        "fullName": "Full Name",
+        "email": "Email",
+        "phone": "Phone Number",
+        "service": "Service Needed",
+        "servicePlaceholder": "Select a service",
+        "message": "Project Details",
+        "submit": "Request Quote",
+        "success": "Thank you! Your quote request has been received. Our team will be in touch shortly.",
+        "errors": {
+          "required": "This field is required.",
+          "email": "Please enter a valid email address."
+        }
+      }
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "subtitle": "How we collect, use, and protect your information.",
+      "updated": "Last updated: January 2026",
+      "sections": [
+        {
+          "h": "Information We Collect",
+          "p": "We collect the details you provide when requesting a quote or submitting documents, such as your name, contact information, and the files you choose to share with us."
+        },
+        {
+          "h": "How We Use Your Information",
+          "p": "Your information is used solely to prepare quotes, assign qualified translators, deliver completed work, and respond to your enquiries."
+        },
+        {
+          "h": "Document Confidentiality",
+          "p": "All documents are stored securely and access is limited to the linguists directly assigned to your project. Files are retained only as long as necessary to complete and support your order."
+        },
+        {
+          "h": "Third Parties",
+          "p": "We do not sell your personal information. Documents are only shared with vetted translators and reviewers bound by confidentiality agreements."
+        },
+        {
+          "h": "Your Rights",
+          "p": "You may request access to, correction of, or deletion of your personal information at any time by contacting our team."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Terms & Conditions",
+      "subtitle": "The terms governing use of our services.",
+      "updated": "Last updated: January 2026",
+      "sections": [
+        {
+          "h": "Acceptance of Terms",
+          "p": "By requesting a quote or placing an order, you agree to the terms outlined on this page."
+        },
+        {
+          "h": "Service Delivery",
+          "p": "Turnaround times provided at quotation are estimates based on document length, complexity, and language pair, and begin once payment and source files are confirmed."
+        },
+        {
+          "h": "Client Responsibilities",
+          "p": "Clients are responsible for providing accurate source material and for reviewing final deliverables for context-specific requirements."
+        },
+        {
+          "h": "Intellectual Property",
+          "p": "Ownership of translated content transfers to the client upon full payment, excluding any pre-existing translation memories or glossaries retained for quality purposes."
+        },
+        {
+          "h": "Limitation of Liability",
+          "p": "Our liability for any claim relating to a project is limited to the fees paid for that specific translation."
+        }
+      ]
+    },
+    "refund": {
+      "title": "Refund Policy",
+      "subtitle": "Our approach to revisions, refunds, and satisfaction.",
+      "updated": "Last updated: January 2026",
+      "sections": [
+        {
+          "h": "Revisions",
+          "p": "If a delivered translation does not meet the agreed brief, we offer free revisions within 7 days of delivery at no additional cost."
+        },
+        {
+          "h": "Eligibility for Refunds",
+          "p": "Refunds may be issued for cancelled projects prior to translator assignment, or where delivered work materially fails to meet the agreed scope after revision attempts."
+        },
+        {
+          "h": "Non-Refundable Situations",
+          "p": "Completed and delivered certified translations that meet the original brief are not eligible for refund once accepted by the relevant authority."
+        },
+        {
+          "h": "How to Request",
+          "p": "To request a revision or refund, contact our support team with your order reference within 14 days of delivery."
+        }
+      ]
+    }
+  }
+}

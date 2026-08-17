@@ -1,7 +1,7 @@
 <?php
 $isCz = is_maori(); // true when current language is Czech
 $PLAYSTORE_URL = 'https://play.google.com/store/apps/details?id=com.honey.hanioo&hl=en_IN';
-$APPSTORE_URL = 'https://www.apple.com/in/app-store/';
+$APPSTORE_URL = 'https://apps.apple.com/in/app/hanioo/id6760541990';
 ?>
 <header class="site-header" id="site-header">
   <div class="container header-inner">
@@ -11,7 +11,7 @@ $APPSTORE_URL = 'https://www.apple.com/in/app-store/';
 
     <nav class="main-nav" id="main-nav">
       <button type="button" class="nav-link-btn" data-home-link><?= htmlspecialchars(t('nav.home')) ?></button>
-      <button type="button" class="nav-link-btn" data-about-link><?= htmlspecialchars(t('nav.about')) ?></button>
+      <a class="nav-link-btn" href="<?= url() ?>about.php"><?= htmlspecialchars(t('nav.about')) ?></a>
       <a class="nav-link-btn" href="<?= url() ?>services.php"><?= htmlspecialchars(t('nav.services')) ?></a>
       <a class="nav-link-btn" href="<?= url() ?>how-it-works.php"><?= htmlspecialchars(t('nav.howItWorks')) ?></a>
       <a class="nav-link-btn" href="<?= url() ?>blog.php"><?= htmlspecialchars(t('nav.blog')) ?></a>

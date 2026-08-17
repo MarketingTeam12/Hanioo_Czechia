@@ -93,8 +93,8 @@
   }
 
   function initSmoothAnchors() {
-    // Header nav "home"/"about" buttons scroll on the homepage, or navigate
-    // to index.php + hash on other pages (mirrors react-scroll <Element>/<Link>).
+    // Header nav "home" button scrolls on the homepage, or navigates to
+    // index.php on other pages (mirrors react-scroll <Element>/<Link>).
     const siteBase = window.SITE_BASE || '';
     const isHome = location.pathname === siteBase + '/' || location.pathname === siteBase + '/index.php';
     document.querySelectorAll('[data-home-link]').forEach((el) => {
@@ -104,16 +104,6 @@
           window.scrollTo({ top: 0, behavior: 'smooth' });
         } else {
           window.location.href = siteBase + '/';
-        }
-      });
-    });
-    document.querySelectorAll('[data-about-link]').forEach((el) => {
-      el.addEventListener('click', (e) => {
-        e.preventDefault();
-        if (isHome) {
-          document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
-        } else {
-          window.location.href = siteBase + '/#about';
         }
       });
     });
@@ -166,20 +156,14 @@
       const email = document.getElementById('popup-email').value.trim();
       const city = document.getElementById('popup-city').value.trim();
       const message = document.getElementById('popup-message').value.trim();
-      const agree = document.getElementById('popup-agree').checked;
 
-      if (!fullName || !phone || !email || !city) {
+      if (!fullName || !phone || !city) {
         errorBox.textContent = 'Please fill in all required fields.';
         errorBox.removeAttribute('hidden');
         return;
       }
-      if (!/^\S+@\S+\.\S+$/.test(email)) {
+      if (email && !/^\S+@\S+\.\S+$/.test(email)) {
         errorBox.textContent = 'Please enter a valid email address.';
-        errorBox.removeAttribute('hidden');
-        return;
-      }
-      if (!agree) {
-        errorBox.textContent = 'Please agree to the Privacy Policy to continue.';
         errorBox.removeAttribute('hidden');
         return;
       }

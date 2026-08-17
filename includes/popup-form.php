@@ -33,8 +33,8 @@
         </div>
 
         <div class="form-group">
-          <label for="popup-email"><span class="label-notch"></span><?= $isCz ? 'E-mail' : 'Email' ?> <span class="req-star">*</span></label>
-          <input id="popup-email" type="email" name="email" placeholder="<?= $isCz ? 'Zadejte svůj e-mail' : 'Enter Your Email' ?>" required>
+          <label for="popup-email"><span class="label-notch"></span><?= $isCz ? 'E-mail' : 'Email' ?></label>
+          <input id="popup-email" type="email" name="email" placeholder="<?= $isCz ? 'Zadejte svůj e-mail' : 'Enter Your Email' ?>">
         </div>
 
         <div class="form-group">
@@ -45,14 +45,6 @@
         <div class="form-group">
           <label for="popup-message"><span class="label-notch"></span><?= $isCz ? 'Zpráva (volitelné)' : 'Message (Optional)' ?></label>
           <textarea id="popup-message" name="message" placeholder="<?= $isCz ? 'Zadejte svou zprávu' : 'Enter Your Message' ?>" rows="3"></textarea>
-        </div>
-
-        <div class="form-checkbox">
-          <label class="checkbox-container">
-            <input type="checkbox" name="agree" id="popup-agree">
-            <span class="checkmark"></span>
-            <span class="checkbox-text"><?= $isCz ? 'Souhlasím se zásadami ochrany osobních údajů' : 'I agree to the Privacy Policy' ?></span>
-          </label>
         </div>
 
         <div class="recaptcha-real-wrapper">

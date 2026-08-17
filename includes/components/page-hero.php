@@ -6,7 +6,7 @@ $pageHeroGreetingCount = count($PAGE_HERO_GREETINGS);
 $pageHeroGreetingSlot = 16 / $pageHeroGreetingCount;
 ?>
 <section class="page-hero">
-  <div class="page-hero-lines" aria-hidden="true"></div>
+  <div class="page-hero-dots" aria-hidden="true"></div>
   <div class="page-hero-rings" aria-hidden="true">
     <span class="page-hero-ring page-hero-ring--1"></span>
     <span class="page-hero-ring page-hero-ring--2"></span>

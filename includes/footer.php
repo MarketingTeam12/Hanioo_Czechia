@@ -56,8 +56,8 @@ $whyChooseUs = [
           <?= $isCz ? 'Živě tlumočíme do češtiny' : 'Interpreting into Czech, live' ?>
         </span>
         <div class="social-row">
-          <a href="https://facebook.com/haniootranslation" target="_blank" rel="noopener noreferrer" class="facebook" aria-label="Facebook"><?php icon('FaFacebookF', 16); ?></a>
-          <a href="https://instagram.com/haniootranslation" target="_blank" rel="noopener noreferrer" class="instagram" aria-label="Instagram"><?php icon('FaInstagram', 16); ?></a>
+          <a href="https://www.facebook.com/profile.php?id=61592876055095" target="_blank" rel="noopener noreferrer" class="facebook" aria-label="Facebook"><?php icon('FaFacebookF', 16); ?></a>
+          <a href="https://www.instagram.com/hanioo_app/" target="_blank" rel="noopener noreferrer" class="instagram" aria-label="Instagram"><?php icon('FaInstagram', 16); ?></a>
           <a href="mailto:<?= $CONTACT_EMAIL ?>" class="mail" aria-label="Email"><?php icon('HiOutlineEnvelope', 18); ?></a>
         </div>
 

@@ -1,7 +1,14 @@
 (function () {
   'use strict';
 
+  // Site's own reCAPTCHA widget key (used to gate the form before submit).
   const RECAPTCHA_SITE_KEY = '6LcB03ktAAAAAJyuFlYhHR1WezhheGXV-OdELW_u';
+  // Zoho's own reCAPTCHA site key, registered against this domain in the
+  // original Zoho Web-to-Lead embed. Zoho's server validates the
+  // g-recaptcha-response against THIS key — using our own site key's
+  // token gets silently rejected by Zoho, which is why leads were not
+  // arriving in the CRM even though the form "submitted" successfully.
+  const ZOHO_RECAPTCHA_SITE_KEY = '6Ld26IstAAAAAB_MWG8S53k54sR3JiHEwIs-EVdm';
   let recaptchaScriptPromise = null;
 
   // ---------------------------------------------------------------------
@@ -67,6 +74,7 @@
     initLangDropdown();
     initPopupForm();
     initContactForm();
+    initQuoteForm();
     initFaqAccordion();
     initSimpleFaq();
     initCountUp();
@@ -170,7 +178,7 @@
       loadRecaptchaScript().then(() => {
         const container = document.getElementById('popup-recaptcha-container');
         if (container && widgetId === null) {
-          widgetId = window.grecaptcha.render(container, { sitekey: RECAPTCHA_SITE_KEY, theme: 'light' });
+          widgetId = window.grecaptcha.render(container, { sitekey: ZOHO_RECAPTCHA_SITE_KEY, theme: 'light' });
         }
       });
     }
@@ -217,7 +225,8 @@
         'Mobile': phone,
         'City': city,
         'Email': email,
-        'Description': message
+        'Description': message,
+        'g-recaptcha-response': token
       });
       form.setAttribute('hidden', '');
       successMsg.removeAttribute('hidden');
@@ -237,7 +246,7 @@
     loadRecaptchaScript().then(() => {
       const container = document.getElementById('contact-recaptcha-container');
       if (container && widgetId === null) {
-        widgetId = window.grecaptcha.render(container, { sitekey: RECAPTCHA_SITE_KEY, theme: 'light' });
+        widgetId = window.grecaptcha.render(container, { sitekey: ZOHO_RECAPTCHA_SITE_KEY, theme: 'light' });
       }
     });
 
@@ -279,13 +288,83 @@
         'Mobile': values.phone,
         'City': values.country,
         'Email': values.email,
-        'Description': values.message
+        'Description': values.message,
+        'g-recaptcha-response': token
       });
       form.reset();
       if (window.grecaptcha && widgetId !== null) {
         try { window.grecaptcha.reset(widgetId); } catch (err) {}
       }
       successBackdrop?.removeAttribute('hidden');
+    });
+  }
+
+  // ---------------------------------------------------------------------
+  function initQuoteForm() {
+    const form = document.getElementById('quote-request-form');
+    if (!form) return;
+
+    let widgetId = null;
+    loadRecaptchaScript().then(() => {
+      const container = document.getElementById('quote-recaptcha-container');
+      if (container && widgetId === null) {
+        widgetId = window.grecaptcha.render(container, { sitekey: ZOHO_RECAPTCHA_SITE_KEY, theme: 'light' });
+      }
+    });
+
+    let errorBox = form.querySelector('.field-error[data-error-for="submit"]');
+    if (!errorBox) {
+      errorBox = document.createElement('span');
+      errorBox.className = 'field-error';
+      errorBox.setAttribute('data-error-for', 'submit');
+      errorBox.style.display = 'none';
+      errorBox.style.marginTop = '8px';
+      form.querySelector('.recaptcha-real-wrapper')?.insertAdjacentElement('afterend', errorBox);
+    }
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      errorBox.style.display = 'none';
+
+      const fullName = form.querySelector('[name="fullName"]')?.value.trim() || '';
+      const mobile = form.querySelector('[name="mobile"]')?.value.trim() || '';
+      const city = form.querySelector('[name="city"]')?.value.trim() || '';
+      const email = form.querySelector('[name="email"]')?.value.trim() || '';
+      const description = form.querySelector('[name="description"]')?.value.trim() || '';
+
+      if (!fullName || !mobile || !city) {
+        errorBox.textContent = 'Please fill in all required fields.';
+        errorBox.style.display = 'block';
+        return;
+      }
+      if (email && !/^\S+@\S+\.\S+$/.test(email)) {
+        errorBox.textContent = 'Please enter a valid email address.';
+        errorBox.style.display = 'block';
+        return;
+      }
+      const token = window.grecaptcha && widgetId !== null ? window.grecaptcha.getResponse(widgetId) : '';
+      if (!token) {
+        errorBox.textContent = 'Please complete the reCAPTCHA verification.';
+        errorBox.style.display = 'block';
+        return;
+      }
+
+      submitToZohoLead({
+        'Last Name': fullName,
+        'Mobile': mobile,
+        'City': city,
+        'Email': email,
+        'Description': description,
+        'g-recaptcha-response': token
+      });
+
+      form.reset();
+      if (window.grecaptcha && widgetId !== null) {
+        try { window.grecaptcha.reset(widgetId); } catch (err) {}
+      }
+      errorBox.style.color = 'green';
+      errorBox.textContent = 'Thank you! Your request has been submitted.';
+      errorBox.style.display = 'block';
     });
   }
 

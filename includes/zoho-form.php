@@ -1,8 +1,14 @@
 <?php
 /**
- * Plain quote-request form. Zoho CRM Web-to-Lead wiring has been removed —
- * plug your own CRM/email endpoint into the <form action="..."> below (or
- * handle the POST in a small PHP script) when you're ready to go live.
+ * Quote-request form markup. Submission is NOT handled here — this form
+ * has no action/method because assets/js/main.js (initQuoteForm) hijacks
+ * the submit event, validates the fields + reCAPTCHA, and posts the lead
+ * straight to Zoho CRM (Web-to-Lead) via a hidden iframe (see
+ * submitToZohoLead() and ZOHO_HIDDEN_FIELDS in main.js, and the
+ * #zoho-lead-target iframe in includes/footer.php). The popup form and
+ * the contact form work the same way. If you ever regenerate the Zoho
+ * Web-to-Lead embed code, update ZOHO_HIDDEN_FIELDS and
+ * ZOHO_RECAPTCHA_SITE_KEY in main.js to match the new values.
  */
 $isCzQuote = is_maori();
 ?>

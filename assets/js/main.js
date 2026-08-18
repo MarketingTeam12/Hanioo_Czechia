@@ -4,24 +4,28 @@
   // Site's own reCAPTCHA widget key (used to gate the form before submit).
   const RECAPTCHA_SITE_KEY = '6LcB03ktAAAAAJyuFlYhHR1WezhheGXV-OdELW_u';
   // Zoho's own reCAPTCHA site key, registered against this domain in the
-  // original Zoho Web-to-Lead embed. Zoho's server validates the
-  // g-recaptcha-response against THIS key — using our own site key's
-  // token gets silently rejected by Zoho, which is why leads were not
-  // arriving in the CRM even though the form "submitted" successfully.
-  const ZOHO_RECAPTCHA_SITE_KEY = '6Ld26IstAAAAAB_MWG8S53k54sR3JiHEwIs-EVdm';
+  // current Zoho Web-to-Lead embed (webform588346000042703014). Zoho's
+  // server validates the g-recaptcha-response against THIS key — using
+  // our own site key's token gets silently rejected by Zoho, which is
+  // why leads fail to arrive in the CRM even though the form "submitted"
+  // successfully. Keep this in sync whenever the Zoho form is regenerated.
+  const ZOHO_RECAPTCHA_SITE_KEY = '6LePE4wtAAAAAEJBydd_Dz7QAGXmTaTSNE3qAPfu';
   let recaptchaScriptPromise = null;
 
   // ---------------------------------------------------------------------
   // Zoho CRM "Web to Lead" submission helper.
-  // Builds the exact hidden form Zoho generated and posts it silently
-  // (via a hidden iframe target) so the visitor never leaves the page.
+  // Builds the exact hidden form Zoho generated (webform588346000042703014)
+  // and posts it silently (via a hidden iframe target) so the visitor
+  // never leaves the page.
   const ZOHO_LEAD_URL = 'https://crm.zoho.in/crm/WebToLeadForm';
   const ZOHO_HIDDEN_FIELDS = {
-    xnQsjsdp: '543a7abd5ed73e021bc6e70e041233941129fe83e561668e7eb1e563257b308f',
+    xnQsjsdp: 'e2b94fa19f21e0e9e46823cfdec0de17ec6570a3993166478bad844a26c85ea2',
     zc_gad: '',
-    xmIwtLD: '333902b3df37919bd08a2f85233937797abc41c9858a85d34533b8c1c62f3e5280f903564d23d5ce66f39ca83d952784',
+    xmIwtLD: 'b5450b4b0a0cc04cb4cbd62dc20b70dcd360b7fe2d67cf7e2b385dfe0e34397e6c46823ce2a8883b8f17915bca557bff',
     actionType: 'TGVhZHM=',
     returnURL: 'https://hanioo.cz/thank-you',
+    LEADCF39: '.',
+    LEADCF29: '.',
     aG9uZXlwb3Q: ''
   };
 

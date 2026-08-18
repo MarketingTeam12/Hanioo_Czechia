@@ -8,11 +8,13 @@ $REVIEWS = [
 ?>
 <section class="testimonials-section section">
   <div class="container">
-    <div class="section-header center">
-      <span class="eyebrow"><?= htmlspecialchars(t('testimonials.eyebrow')) ?></span>
-      <h2 class="section-title"><?= htmlspecialchars(t('testimonials.title')) ?></h2>
-      <p class="section-subtitle"><?= htmlspecialchars(t('testimonials.subtitle')) ?></p>
-    </div>
+    <?php if (empty($hideSectionHeader)): ?>
+      <div class="section-header center">
+        <span class="eyebrow"><?= htmlspecialchars(t('testimonials.eyebrow')) ?></span>
+        <h2 class="section-title"><?= htmlspecialchars(t('testimonials.title')) ?></h2>
+        <p class="section-subtitle"><?= htmlspecialchars(t('testimonials.subtitle')) ?></p>
+      </div>
+    <?php endif; ?>
 
     <div class="site-carousel" data-autoplay="5000">
       <div class="site-carousel-track">

@@ -1,0 +1,8 @@
+/* Tawk.to widget — left at its default position. Position overrides
+   via CSS/JS were unreliable (Tawk's own script re-applies inline
+   styles and its internal "We Are Here" tooltip is positioned relative
+   to the bubble, so forcing the bubble elsewhere broke the tooltip).
+   To move the widget's on-screen position without these issues, use
+   Tawk's own dashboard setting instead:
+   Tawk dashboard → Administration → Channels → Chat Widget →
+   Widget Appearance → Position (bottom-left / bottom-right + offset). */

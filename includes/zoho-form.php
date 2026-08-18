@@ -1,8 +1,7 @@
 <?php
 /**
- * Plain quote-request form. Zoho CRM Web-to-Lead wiring has been removed —
- * plug your own CRM/email endpoint into the <form action="..."> below (or
- * handle the POST in a small PHP script) when you're ready to go live.
+ * Quote-request form. Submits directly to the Zoho CRM Web-to-Lead
+ * endpoint via submitToZohoLead() in assets/js/main.js (initQuoteForm).
  */
 $isCzQuote = is_maori();
 ?>

@@ -4,6 +4,44 @@
   const RECAPTCHA_SITE_KEY = '6LcB03ktAAAAAJyuFlYhHR1WezhheGXV-OdELW_u';
   let recaptchaScriptPromise = null;
 
+  // ---------------------------------------------------------------------
+  // Zoho CRM "Web to Lead" submission helper.
+  // Builds the exact hidden form Zoho generated and posts it silently
+  // (via a hidden iframe target) so the visitor never leaves the page.
+  const ZOHO_LEAD_URL = 'https://crm.zoho.in/crm/WebToLeadForm';
+  const ZOHO_HIDDEN_FIELDS = {
+    xnQsjsdp: '543a7abd5ed73e021bc6e70e041233941129fe83e561668e7eb1e563257b308f',
+    zc_gad: '',
+    xmIwtLD: '333902b3df37919bd08a2f85233937797abc41c9858a85d34533b8c1c62f3e5280f903564d23d5ce66f39ca83d952784',
+    actionType: 'TGVhZHM=',
+    returnURL: 'https://hanioo.cz/thank-you',
+    aG9uZXlwb3Q: ''
+  };
+
+  function submitToZohoLead(fields) {
+    const form = document.createElement('form');
+    form.action = ZOHO_LEAD_URL;
+    form.method = 'POST';
+    form.target = 'zoho-lead-target';
+    form.style.display = 'none';
+
+    const addField = (name, value) => {
+      const input = document.createElement('input');
+      input.type = 'hidden';
+      input.name = name;
+      input.value = value == null ? '' : value;
+      form.appendChild(input);
+    };
+
+    Object.keys(ZOHO_HIDDEN_FIELDS).forEach((key) => addField(key, ZOHO_HIDDEN_FIELDS[key]));
+    addField('Lead Source', 'Website');
+    Object.keys(fields).forEach((key) => addField(key, fields[key]));
+
+    document.body.appendChild(form);
+    form.submit();
+    setTimeout(() => form.remove(), 1000);
+  }
+
   function loadRecaptchaScript() {
     if (window.grecaptcha && window.grecaptcha.render) return Promise.resolve();
     if (recaptchaScriptPromise) return recaptchaScriptPromise;
@@ -174,8 +212,13 @@
         return;
       }
 
-      // CRM wiring removed — hook your own endpoint into this submit handler
-      // (e.g. fetch('/your-endpoint', { method: 'POST', body: new FormData(form) })).
+      submitToZohoLead({
+        'Last Name': fullName,
+        'Mobile': phone,
+        'City': city,
+        'Email': email,
+        'Description': message
+      });
       form.setAttribute('hidden', '');
       successMsg.removeAttribute('hidden');
       if (window.grecaptcha && widgetId !== null) {
@@ -231,8 +274,13 @@
       }
       if (!valid) return;
 
-      // CRM wiring removed — hook your own endpoint into this submit handler
-      // (e.g. fetch('/your-endpoint', { method: 'POST', body: new FormData(form) })).
+      submitToZohoLead({
+        'Last Name': values.fullName,
+        'Mobile': values.phone,
+        'City': values.country,
+        'Email': values.email,
+        'Description': values.message
+      });
       form.reset();
       if (window.grecaptcha && widgetId !== null) {
         try { window.grecaptcha.reset(widgetId); } catch (err) {}

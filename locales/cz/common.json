@@ -289,7 +289,6 @@
     "legal": "Právní informace",
     "privacy": "Zásady ochrany osobních údajů",
     "terms": "Obchodní podmínky",
-    "refund": "Zásady vracení peněz",
     "rights": "Všechna práva vyhrazena."
   },
   "common": {
@@ -388,29 +387,6 @@
         {
           "h": "Omezení odpovědnosti",
           "p": "Naše odpovědnost za jakýkoli nárok týkající se projektu je omezena na poplatky zaplacené za daný konkrétní překlad."
-        }
-      ]
-    },
-    "refund": {
-      "title": "Zásady vracení peněz",
-      "subtitle": "Náš přístup k revizím, vrácení peněz a spokojenosti zákazníků.",
-      "updated": "Naposledy aktualizováno: leden 2026",
-      "sections": [
-        {
-          "h": "Revize",
-          "p": "Pokud dodaný překlad neodpovídá dohodnutému zadání, nabízíme bezplatné revize do 7 dnů od dodání, bez dalších nákladů."
-        },
-        {
-          "h": "Nárok na vrácení peněz",
-          "p": "Vrácení peněz může být vydáno u zrušených projektů před přiřazením překladatele, nebo pokud dodaná práce po pokusech o revizi zásadně neodpovídá dohodnutému rozsahu."
-        },
-        {
-          "h": "Situace bez nároku na vrácení peněz",
-          "p": "Dokončené a dodané certifikované překlady, které odpovídají původnímu zadání, nemají po přijetí příslušným úřadem nárok na vrácení peněz."
-        },
-        {
-          "h": "Jak podat žádost",
-          "p": "Chcete-li požádat o revizi nebo vrácení peněz, kontaktujte náš tým podpory s referenčním číslem objednávky do 14 dnů od dodání."
         }
       ]
     }

@@ -136,7 +136,6 @@ $whyChooseUs = [
       <div class="footer-legal">
         <a href="<?= url() ?>privacy-policy.php"><?= htmlspecialchars(t('footer.privacy')) ?></a>
         <a href="<?= url() ?>terms.php"><?= htmlspecialchars(t('footer.terms')) ?></a>
-        <a href="<?= url() ?>refund-policy.php"><?= htmlspecialchars(t('footer.refund')) ?></a>
       </div>
     </div>
   </div>

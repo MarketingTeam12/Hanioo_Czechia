@@ -1,7 +1,7 @@
 <?php
 $isCz = is_maori(); // true when current language is Czech
 $PLAYSTORE_URL = 'https://play.google.com/store/apps/details?id=com.honey.hanioo&hl=en_IN';
-$APPSTORE_URL = 'https://apps.apple.com/in/app/hanioo/id6760541990';
+$APPSTORE_URL = 'https://apps.apple.com/in/iphone/search?term=hanioo';
 ?>
 <header class="site-header" id="site-header">
   <div class="container header-inner">

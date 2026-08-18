@@ -289,7 +289,6 @@
     "legal": "Legal",
     "privacy": "Privacy Policy",
     "terms": "Terms & Conditions",
-    "refund": "Refund Policy",
     "rights": "All rights reserved."
   },
   "common": {
@@ -339,80 +338,274 @@
     },
     "privacy": {
       "title": "Privacy Policy",
-      "subtitle": "How we collect, use, and protect your information.",
-      "updated": "Last updated: January 2026",
+      "subtitle": "Your privacy matters to us. This policy explains how Hanioo collects, uses, and protects your information.",
+      "updated": "Last Updated: 25/02/2026",
+      "intro": [
+        "Welcome to Hanioo. This Privacy Policy (\"Policy\") describes how HONEY UNIVERSAL DIGITAL PRIVATE LIMITED, a company registered under the Companies Act, 2013, having its registered office at Door No.210/211, Rahat Plaza, 2nd Floor 172, Arcot Road, Vadapalani, Chennai, Tamil Nadu, India, 600026 (hereinafter referred to as the \"Company\", \"we\", \"us\", or \"our\") collects, uses, stores, and protects your personal data when you use the Hanioo mobile application (the \"Platform\").",
+        "By using our Platform, you consent to the practices described in this Policy. If you do not agree with this Policy, please do not use the Platform."
+      ],
       "sections": [
         {
+          "id": "information-we-collect",
+          "icon": "HiOutlineClipboardDocumentList",
           "h": "Information We Collect",
-          "p": "We collect the details you provide when requesting a quote or submitting documents, such as your name, contact information, and the files you choose to share with us."
+          "items": [
+            {
+              "label": "Personal Information",
+              "text": "When you register on Hanioo, we collect your name, email address, phone number, profile picture, preferred languages, and location data to create and manage your account."
+            },
+            {
+              "label": "Payment Information",
+              "text": "All payment transactions are securely processed through Razorpay. We do not store your credit/debit card details, bank account numbers, or other sensitive financial information on our servers."
+            },
+            {
+              "label": "Usage Data",
+              "text": "We automatically collect information about how you interact with the Platform, including booking history, session duration, device type, operating system, IP address, and app usage analytics."
+            },
+            {
+              "label": "Communication Data",
+              "text": "If you contact our support team or communicate through the Platform, we may store records of those interactions for quality assurance and dispute resolution purposes."
+            },
+            {
+              "label": "Interpreter-Specific Data",
+              "text": "Service Providers may be required to submit additional information such as certifications, language proficiency proof, government-issued ID, and professional experience details for verification purposes."
+            }
+          ]
         },
         {
+          "id": "how-we-use-your-information",
+          "icon": "HiOutlineCog6Tooth",
           "h": "How We Use Your Information",
-          "p": "Your information is used solely to prepare quotes, assign qualified translators, deliver completed work, and respond to your enquiries."
+          "items": [
+            "To create, manage, and maintain your user account on the Platform.",
+            "To match Clients with suitable Service Providers based on language requirements and availability.",
+            "To process bookings, payments, refunds, and cancellations.",
+            "To improve and personalize your experience on the Platform through analytics and usage patterns.",
+            "To communicate important updates, promotional offers, and service notifications (you may opt out of marketing communications at any time).",
+            "To detect, prevent, and address fraud, security breaches, and other harmful activities.",
+            "To comply with legal obligations and respond to lawful requests from authorities."
+          ]
         },
         {
-          "h": "Document Confidentiality",
-          "p": "All documents are stored securely and access is limited to the linguists directly assigned to your project. Files are retained only as long as necessary to complete and support your order."
+          "id": "data-sharing-disclosure",
+          "icon": "HiOutlineLink",
+          "h": "Data Sharing & Disclosure",
+          "items": [
+            "We do not sell, rent, or trade your personal data to third parties for marketing purposes.",
+            "We may share limited information with Service Providers (interpreters) to facilitate the completion of booked services (e.g., your name and language requirements).",
+            "We may share data with trusted third-party service providers who assist in operating the Platform, including payment processors (Razorpay), cloud hosting services, and analytics providers, under strict confidentiality agreements.",
+            "We may disclose your information if required by law, court order, or governmental authority, or to protect the rights, property, or safety of the Company, its users, or the public.",
+            "In the event of a merger, acquisition, or sale of assets, your data may be transferred as part of the business transaction, subject to the same level of protection outlined in this Policy."
+          ]
         },
         {
-          "h": "Third Parties",
-          "p": "We do not sell your personal information. Documents are only shared with vetted translators and reviewers bound by confidentiality agreements."
+          "id": "data-security",
+          "icon": "HiOutlineLockClosed",
+          "h": "Data Security",
+          "items": [
+            "We implement industry-standard security measures including encryption, firewalls, and secure server infrastructure to protect your personal information from unauthorized access, alteration, or destruction.",
+            "While we strive to protect your data, no method of electronic transmission or storage is 100% secure. We cannot guarantee absolute security but are committed to taking all reasonable precautions.",
+            "You are responsible for keeping your account credentials confidential. Notify us immediately if you suspect unauthorized access to your account."
+          ]
         },
         {
+          "id": "cookies-tracking",
+          "icon": "HiOutlineMagnifyingGlass",
+          "h": "Cookies & Tracking",
+          "items": [
+            "We may use cookies and similar tracking technologies to enhance your experience, analyze usage patterns, and deliver personalized content.",
+            "You can manage or disable cookies through your device or browser settings. However, disabling cookies may affect certain features and functionality of the Platform."
+          ]
+        },
+        {
+          "id": "third-party-services",
+          "icon": "HiOutlineGlobeAlt",
+          "h": "Third-Party Services",
+          "items": [
+            "The Platform may contain links to third-party websites or services that are not operated by us. We are not responsible for the privacy practices or content of these external sites.",
+            "We encourage you to review the privacy policies of any third-party services before providing your personal information."
+          ]
+        },
+        {
+          "id": "your-rights",
+          "icon": "HiOutlineShieldCheck",
           "h": "Your Rights",
-          "p": "You may request access to, correction of, or deletion of your personal information at any time by contacting our team."
+          "items": [
+            {
+              "label": "Access",
+              "text": "You have the right to request a copy of the personal data we hold about you."
+            },
+            {
+              "label": "Correction",
+              "text": "You may request corrections to any inaccurate or incomplete personal information."
+            },
+            {
+              "label": "Deletion",
+              "text": "You may request the deletion of your personal data, subject to legal and contractual obligations."
+            },
+            {
+              "label": "Opt-Out",
+              "text": "You may opt out of receiving promotional communications by using the unsubscribe option or contacting us directly."
+            },
+            {
+              "label": "Data Portability",
+              "text": "You may request your data in a structured, machine-readable format where technically feasible."
+            }
+          ],
+          "note": "To exercise any of these rights, please contact us at salesteam@honeytranslation.com.",
+          "noteEmail": "salesteam@honeytranslation.com"
+        },
+        {
+          "id": "childrens-privacy",
+          "icon": "HiOutlineHeart",
+          "h": "Children's Privacy",
+          "items": [
+            "The Platform is not intended for individuals under the age of 18. We do not knowingly collect personal data from minors.",
+            "If we become aware that we have collected data from a minor without parental consent, we will take steps to delete that information promptly."
+          ]
+        },
+        {
+          "id": "changes-to-this-policy",
+          "icon": "HiOutlineDocumentCheck",
+          "h": "Changes to This Policy",
+          "items": [
+            "We reserve the right to update or modify this Privacy Policy at any time. Changes will be posted on this page with an updated \"Last Updated\" date.",
+            "We encourage you to review this Policy periodically. Continued use of the Platform after changes constitutes acceptance of the updated Policy."
+          ]
+        },
+        {
+          "id": "contact-us",
+          "icon": "HiOutlineChatBubbleLeftRight",
+          "h": "Contact Us",
+          "p": "If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:",
+          "contactCard": {
+            "company": "HONEY UNIVERSAL DIGITAL PRIVATE LIMITED",
+            "address": "Door No.210/211, Rahat Plaza, 2nd Floor 172, Arcot Road, Vadapalani, Chennai, Tamil Nadu, India, 600026",
+            "email": "salesteam@honeytranslation.com",
+            "phone": "+91 729 900 5577"
+          }
         }
       ]
     },
     "terms": {
       "title": "Terms & Conditions",
-      "subtitle": "The terms governing use of our services.",
-      "updated": "Last updated: January 2026",
+      "subtitle": "Please read these terms carefully before using the Hanioo platform. By accessing or using our services, you agree to be bound by these terms.",
+      "updated": "Last Updated: 25/02/2026",
+      "intro": [
+        "Welcome to Hanioo. These Terms and Conditions (\"Terms\") govern your access and use of our mobile application (the \"Platform\"), made available by HONEY UNIVERSAL DIGITAL PRIVATE LIMITED, a company registered under the Companies Act, 2013, having its registered office at Door No.210/211, Rahat Plaza, 2nd Floor 172, Arcot Road, Vadapalani, Chennai, Tamil Nadu, India, 600026 (hereinafter referred to as the \"Company\"). This application allows users (\"Clients\") to book interpreters (\"Service Providers\") for language translation services.",
+        "By using our Platform, you agree to abide by these Terms. If you do not agree, please refrain from using this Platform."
+      ],
       "sections": [
         {
-          "h": "Acceptance of Terms",
-          "p": "By requesting a quote or placing an order, you agree to the terms outlined on this page."
+          "id": "scope-of-services",
+          "icon": "HiOutlineDocumentText",
+          "h": "Scope of Services",
+          "items": [
+            "Hanioo acts as an aggregator platform that connects Clients with Independent Service Providers for translation services, facilitating seamless communication between parties who require interpretation assistance in various languages.",
+            "We do not directly provide interpretation services; instead, we facilitate seamless connections between clients and independent service providers (interpreters). Through our technological infrastructure (Application), we ensure a user-friendly experience. Please note that these service providers are not employees of the \"Hanioo\" platform.",
+            "The Platform allows Clients to browse, book, schedule, and securely pay for interpretation services through our system, offering a convenient way to connect with qualified professionals in real time.",
+            "The Platform may include additional features such as rating and reviewing interpreters."
+          ]
         },
         {
-          "h": "Service Delivery",
-          "p": "Turnaround times provided at quotation are estimates based on document length, complexity, and language pair, and begin once payment and source files are confirmed."
+          "id": "user-accounts",
+          "icon": "HiOutlineUser",
+          "h": "User Accounts",
+          "items": [
+            "To access our services, users must create an account and provide accurate, complete, and up-to-date information, ensuring transparency and smooth interactions on the Platform.",
+            "Users are responsible for maintaining the confidentiality of their account credentials, including usernames and passwords.",
+            "We reserve the right to verify user identities and request supporting documentation to maintain the integrity and trustworthiness of the Platform.",
+            "We may suspend or terminate accounts in cases of fraudulent activity, misrepresentation, abusive behavior, or any other violation of these Terms, ensuring a safe environment for all users.",
+            "The Service is not available to individuals under the age of 18. You must not permit anyone under 18 to receive interpretation or translation services from external interpreters unless they are accompanied by you."
+          ]
         },
         {
-          "h": "Client Responsibilities",
-          "p": "Clients are responsible for providing accurate source material and for reviewing final deliverables for context-specific requirements."
+          "id": "booking-payment-cancellation",
+          "icon": "HiOutlineBanknotes",
+          "h": "Booking, Payment, and Cancellation",
+          "items": [
+            "Clients can browse available interpreters, view their profiles, and book services based on their specific language needs, availability, and expertise levels.",
+            "All payments are securely processed through our trusted payment gateway, Razorpay, ensuring safe and reliable transactions. Payment must be made at the time of booking the scheduled service. For security reasons, we do not store any sensitive payment information on our servers.",
+            "Clients must adhere to the pricing structure displayed on the Platform, and all payments must be completed before the commencement of services unless otherwise agreed upon.",
+            "Cancellations and refunds are subject to our cancellation policy, which may vary based on factors such as the timing of the cancellation and the nature of the booking.",
+            "If a Service Provider cancels a confirmed booking, the Client may be eligible for a refund or request an alternative interpreter as a replacement."
+          ]
         },
         {
-          "h": "Intellectual Property",
-          "p": "Ownership of translated content transfers to the client upon full payment, excluding any pre-existing translation memories or glossaries retained for quality purposes."
+          "id": "service-provider-responsibilities",
+          "icon": "HiOutlineBriefcase",
+          "h": "Service Provider Responsibilities",
+          "items": [
+            "Interpreters must provide professional, accurate, and timely services to Clients, maintaining high ethical standards and professionalism at all times.",
+            "We do not guarantee the quality, accuracy, or availability of any particular Service Provider, and Clients must assess whether an interpreter meets their specific needs.",
+            "Service Providers operate as independent contractors and are not employees, representatives, or agents of Hanioo. They are solely responsible for the quality of services they provide.",
+            "Service Providers are expected to comply with local laws and regulations concerning language interpretation and professional conduct.",
+            "The Registered Service Provider must be an individual."
+          ]
         },
         {
-          "h": "Limitation of Liability",
-          "p": "Our liability for any claim relating to a project is limited to the fees paid for that specific translation."
+          "id": "user-conduct-community-guidelines",
+          "icon": "HiOutlineUserGroup",
+          "h": "User Conduct and Community Guidelines",
+          "items": [
+            "Users must use the Platform lawfully and ethically, ensuring respectful interactions with other users.",
+            "Harassment, abuse, discrimination, or any form of inappropriate behavior toward any user or Service Provider is strictly prohibited and may result in immediate suspension or termination of the account.",
+            "Users agree not to circumvent the Platform's booking system by attempting to engage interpreters outside the Platform for services initiated through Hanioo.",
+            "Misuse of the Platform, including fraudulent bookings, fake reviews, or impersonation, is strictly prohibited and may lead to legal action.",
+            "Customers are solely responsible for any data, information, or materials they share with interpreters through the platform. Hanioo does not assume any liability for the confidentiality, accuracy, or misuse of such data by interpreters. Customers should exercise discretion and provide only the necessary information during interpretation or translation sessions."
+          ]
+        },
+        {
+          "id": "liability-warranties-disclaimers",
+          "icon": "HiOutlineScale",
+          "h": "Liability, Warranties, and Disclaimers",
+          "items": [
+            "Hanioo acts only as an intermediary and is not responsible for the quality, timeliness, or accuracy of interpretation services provided by Service Providers.",
+            "We do not provide any guarantees or warranties regarding the availability, reliability, or performance of any interpreter or service.",
+            "To the fullest extent permitted by law, we shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages arising from your use of the Platform or services booked through it.",
+            "Users acknowledge that interpretation services may vary based on factors such as dialects, regional language differences, and contextual complexities, and Hanioo cannot be held accountable for any misinterpretations.",
+            "In no event shall the total liability of Hanioo and its external interpreters with respect to you and the services for all damages, losses, and actions exceed Five Hundred Euros (€500)."
+          ]
+        },
+        {
+          "id": "privacy-and-data-protection",
+          "icon": "HiOutlineLockClosed",
+          "h": "Privacy and Data Protection",
+          "items": [
+            "We collect, store, and process user data in accordance with our Privacy Policy, ensuring compliance with relevant data protection regulations.",
+            "By using the Platform, you consent to our collection and use of your personal data, which may include contact information, booking history, and usage analytics.",
+            "We employ industry-standard security measures to protect user data; however, users acknowledge that no online system is entirely risk-free.",
+            "Users may request data access, modification, or deletion as per applicable laws and our privacy practices."
+          ]
+        },
+        {
+          "id": "amendments-termination-modifications",
+          "icon": "HiOutlineCog6Tooth",
+          "h": "Amendments, Termination, and Modifications",
+          "items": [
+            "We reserve the right to update, modify, or amend these Terms at any time. Users will be notified of significant changes, and continued use of the Platform signifies acceptance of the updated Terms.",
+            "We may terminate or suspend user accounts at our discretion for violations of these Terms or any other reason deemed necessary to maintain the integrity of the Platform.",
+            "In the event of termination, any pending transactions or obligations must still be fulfilled, unless otherwise specified."
+          ]
+        },
+        {
+          "id": "governing-law-dispute-resolution",
+          "icon": "HiOutlineDocumentCheck",
+          "h": "Governing Law and Dispute Resolution",
+          "items": [
+            "These Terms are governed by the laws of India, without regard to conflict of law principles.",
+            "Any disputes arising from these Terms shall be resolved through arbitration or the courts in India, as per the dispute resolution procedures outlined in our policies.",
+            "Users agree to attempt amicable resolution before initiating formal legal proceedings."
+          ]
         }
-      ]
-    },
-    "refund": {
-      "title": "Refund Policy",
-      "subtitle": "Our approach to revisions, refunds, and satisfaction.",
-      "updated": "Last updated: January 2026",
-      "sections": [
-        {
-          "h": "Revisions",
-          "p": "If a delivered translation does not meet the agreed brief, we offer free revisions within 7 days of delivery at no additional cost."
-        },
-        {
-          "h": "Eligibility for Refunds",
-          "p": "Refunds may be issued for cancelled projects prior to translator assignment, or where delivered work materially fails to meet the agreed scope after revision attempts."
-        },
-        {
-          "h": "Non-Refundable Situations",
-          "p": "Completed and delivered certified translations that meet the original brief are not eligible for refund once accepted by the relevant authority."
-        },
-        {
-          "h": "How to Request",
-          "p": "To request a revision or refund, contact our support team with your order reference within 14 days of delivery."
-        }
-      ]
+      ],
+      "contact": {
+        "h": "Have Questions?",
+        "p": "If you have any questions about these Terms, please contact us:",
+        "address": "Door No.210/211, Rahat Plaza, 2nd Floor 172, Arcot Road, Vadapalani, Chennai, Tamil Nadu, India, 600026",
+        "email": "salesteam@honeytranslation.com",
+        "phone": "+91 729 900 5577"
+      }
     }
   }
 }

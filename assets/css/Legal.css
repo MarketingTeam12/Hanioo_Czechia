@@ -1,5 +1,191 @@
 .legal-container { max-width: 760px; margin: 0 auto; }
 .legal-updated { color: var(--color-text-light); font-size: 13.5px; margin-bottom: 32px; }
+
+/* ---- Simple format (Privacy / Refund) ------------------------------- */
 .legal-section { margin-bottom: 30px; }
 .legal-section h2 { font-size: 19px; color: var(--color-primary); margin-bottom: 10px; }
 .legal-section p { font-size: 14.5px; color: var(--color-text-light); line-height: 1.8; }
+
+/* ---- Intro paragraphs (rich format) ---------------------------------- */
+.legal-intro {
+  font-size: 14.5px;
+  color: var(--color-text-light);
+  line-height: 1.85;
+  margin-bottom: 18px;
+}
+
+/* ---- Table of contents ------------------------------------------------ */
+.legal-toc {
+  padding: 22px 26px;
+  margin-bottom: 32px;
+}
+.legal-toc-title {
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  margin-bottom: 14px;
+}
+.legal-toc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 24px;
+}
+@media (max-width: 620px) {
+  .legal-toc-grid { grid-template-columns: 1fr; }
+}
+.legal-toc-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-primary);
+  padding: 4px 0;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+.legal-toc-link:hover { color: var(--color-accent); transform: translateX(2px); }
+.legal-toc-num {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  color: #fff;
+  font-size: 11.5px;
+  font-weight: 700;
+}
+
+/* ---- Rich section blocks ----------------------------------------------- */
+.legal-section--rich {
+  margin-bottom: 34px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--color-border);
+  scroll-margin-top: calc(var(--header-height) + var(--topbar-height) + 24px);
+}
+.legal-section--rich:last-of-type { border-bottom: none; }
+
+.legal-section-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.legal-section-num {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--gradient-gold);
+  color: var(--color-primary-dark);
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: var(--shadow-soft);
+}
+.legal-section-head h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 19px;
+  color: var(--color-primary);
+  margin: 0;
+}
+.legal-section-icon { color: var(--color-accent); flex-shrink: 0; }
+
+.legal-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-left: 42px;
+}
+.legal-items li {
+  display: flex;
+  gap: 10px;
+  font-size: 14.5px;
+  line-height: 1.8;
+  color: var(--color-text-light);
+}
+.legal-item-num {
+  flex-shrink: 0;
+  font-weight: 700;
+  color: var(--color-secondary);
+  min-width: 34px;
+}
+.legal-item-text { flex: 1; }
+
+.legal-section-p {
+  font-size: 14.5px;
+  color: var(--color-text-light);
+  line-height: 1.8;
+  padding-left: 42px;
+  margin-bottom: 14px;
+}
+
+.legal-section-note {
+  font-size: 14px;
+  color: var(--color-text-light);
+  line-height: 1.8;
+  padding-left: 42px;
+  margin-top: 14px;
+}
+.legal-section-note a { color: var(--color-primary); font-weight: 600; }
+.legal-section-note a:hover { color: var(--color-accent); }
+
+/* ---- Contact card embedded inside a numbered section (e.g. Privacy's
+   "Contact Us" section) ------------------------------------------------ */
+.legal-contact-card {
+  margin-left: 42px;
+  margin-top: 6px;
+  padding: 20px 22px;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+@media (max-width: 480px) {
+  .legal-contact-card { margin-left: 0; }
+}
+.legal-contact-company {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+}
+
+/* ---- Standalone contact box (e.g. Terms's "Have Questions?") -------- */
+.legal-contact {
+  margin-top: 30px;
+  padding: 26px 28px;
+}
+.legal-contact h3 {
+  font-size: 18px;
+  color: var(--color-primary);
+  margin-bottom: 6px;
+}
+.legal-contact p {
+  font-size: 14px;
+  color: var(--color-text-light);
+  margin-bottom: 16px;
+}
+.legal-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.legal-contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--color-text-light);
+}
+.legal-contact-list a { color: var(--color-primary); font-weight: 600; }
+.legal-contact-list a:hover { color: var(--color-accent); }
+.legal-contact-icon { color: var(--color-accent); flex-shrink: 0; }

@@ -338,57 +338,274 @@
     },
     "privacy": {
       "title": "Zásady ochrany osobních údajů",
-      "subtitle": "Jak shromažďujeme, používáme a chráníme vaše údaje.",
-      "updated": "Naposledy aktualizováno: leden 2026",
+      "subtitle": "Vaše soukromí je pro nás důležité. Tyto zásady vysvětlují, jak Hanioo shromažďuje, používá a chrání vaše údaje.",
+      "updated": "Naposledy aktualizováno: 25.02.2026",
+      "intro": [
+        "Vítejte na Hanioo. Tyto zásady ochrany osobních údajů („Zásady“) popisují, jak společnost HONEY UNIVERSAL DIGITAL PRIVATE LIMITED, registrovaná podle indického zákona o obchodních společnostech (Companies Act, 2013), se sídlem Door No.210/211, Rahat Plaza, 2nd Floor 172, Arcot Road, Vadapalani, Chennai, Tamil Nadu, India, 600026 (dále jen „Společnost“, „my“ nebo „náš“), shromažďuje, používá, ukládá a chrání vaše osobní údaje, když používáte mobilní aplikaci Hanioo („Platforma“).",
+        "Používáním naší Platformy vyjadřujete souhlas s postupy popsanými v těchto Zásadách. Pokud s těmito Zásadami nesouhlasíte, Platformu prosím nepoužívejte."
+      ],
       "sections": [
         {
+          "id": "information-we-collect",
+          "icon": "HiOutlineClipboardDocumentList",
           "h": "Jaké informace shromažďujeme",
-          "p": "Shromažďujeme údaje, které nám poskytnete při žádosti o nabídku nebo odesílání dokumentů, jako je vaše jméno, kontaktní údaje a soubory, které se s námi rozhodnete sdílet."
+          "items": [
+            {
+              "label": "Osobní údaje",
+              "text": "Při registraci na Hanioo shromažďujeme vaše jméno, e-mailovou adresu, telefonní číslo, profilovou fotografii, preferované jazyky a údaje o poloze za účelem vytvoření a správy vašeho účtu."
+            },
+            {
+              "label": "Platební údaje",
+              "text": "Všechny platební transakce jsou bezpečně zpracovávány prostřednictvím služby Razorpay. Údaje o platební kartě ani čísla bankovních účtů ani jiné citlivé finanční údaje na našich serverech neukládáme."
+            },
+            {
+              "label": "Provozní údaje",
+              "text": "Automaticky shromažďujeme informace o tom, jak Platformu používáte, včetně historie objednávek, délky relace, typu zařízení, operačního systému, IP adresy a analýzy používání aplikace."
+            },
+            {
+              "label": "Komunikační údaje",
+              "text": "Pokud kontaktujete náš tým podpory nebo komunikujete prostřednictvím Platformy, můžeme uchovávat záznamy o této komunikaci pro účely zajištění kvality a řešení sportů."
+            },
+            {
+              "label": "Údaje specifické pro tlumočníky",
+              "text": "Poskytovatelé služeb mohou být požádáni o ponéchaní dalších informací, jako jsou certifikáty, doklady o jazykových znalostech, doklad totožnosti vydaný státem a informace o profesní praxi za účelem ověření."
+            }
+          ]
         },
         {
+          "id": "how-we-use-your-information",
+          "icon": "HiOutlineCog6Tooth",
           "h": "Jak vaše informace používáme",
-          "p": "Vaše informace používáme výhradně k přípravě nabídek, přiřazení kvalifikovaných překladatelů, dodání hotové práce a odpovídání na vaše dotazy."
+          "items": [
+            "K vytvoření, správě a údržbě vašeho uživatelského účtu na Platformě.",
+            "K přiřazení klientů vhodným poskytovatelům služeb na základě jazykových požadavků a dostupnosti.",
+            "Ke zpracování rezervací, plateb, vrácení peněz a storn.",
+            "Ke zlepšení a personalizaci vašeho zážitku na Platformě prostřednictvím analýzy a vzorců používání.",
+            "Ke komunikaci důležitých aktualizací, propagačních nabídek a upozornění týkajících se služeb (marketingovou komunikaci můžete kdykoli odhlásit).",
+            "K odhalování, prevenci a řešení podvodů, bezpečnostních incidentů a jiných škodlivých aktivit.",
+            "Ke splnění zákonných povinností a reakci na oprávněné žádosti úřadů."
+          ]
         },
         {
-          "h": "Důvěrnost dokumentů",
-          "p": "Všechny dokumenty jsou bezpečně uloženy a přístup k nim mají pouze lingvisté přímo přiřazení k vašemu projektu. Soubory jsou uchovávány pouze po dobu nezbytnou k dokončení a podpoře vaší zakázky."
+          "id": "data-sharing-disclosure",
+          "icon": "HiOutlineLink",
+          "h": "Sdílení a zveřejnění údajů",
+          "items": [
+            "Vaše osobní údaje nikdy neprodáváme, nepronájmáme ani nesměňujeme třetím stranám pro marketingové účely.",
+            "Omezené informace můžeme sdílet s poskytovateli služeb (tlumočníky) za účelem realizace objednaných služeb (např. vaše jméno a jazykové požadavky).",
+            "Údaje můžeme sdílet s důvěryhodnými třetími stranami, které se podílejí na provozu Platformy, včetně platebních zpracovatelů (Razorpay), cloudových služeb a poskytovatelů analýz, a to za přísných podmínek mlkánlivosti.",
+            "Vaše informace můžeme zveřejnit, pokud to vyžaduje zákon, soudní příkaz nebo státní orgán, nebo za účelem ochrany práv, majetku či bezpečnosti Společnosti, jejích uživatelů či veřejnosti.",
+            "V případě fuze, akvizice nebo prodeje majetku mohou být vaše údaje přeneseny jako součást obchodní transakce, a to za dodržení stejné úrovně ochrany, jakou popisují tyto Zásady."
+          ]
         },
         {
-          "h": "Třetí strany",
-          "p": "Vaše osobní údaje neprodáváme. Dokumenty sdílíme pouze s prověřenými překladateli a recenzenty vázanými dohodami o mlčenlivosti."
+          "id": "data-security",
+          "icon": "HiOutlineLockClosed",
+          "h": "Zabezpečení údajů",
+          "items": [
+            "Uplatňujeme standardní bezpečnostní opatření včetně šifrování, firewallů a zabezpečené serverové infrastruktury, abychom chránili vaše osobní údaje před neoprávněným přístupem, změnou či zničením.",
+            "Žádná metoda elektronického přenosu ani ukládání dát není ze 100 % bezpečná. Absolutní bezpečnost nemůžeme zaručit, ale zavazujeme se přijmout všechna přiměřená opatření.",
+            "Za zachování důvěrnosti přihlašovacích údajů k vašemu účtu odpovídáte vy sami. Pokud máte podezření na neoprávněný přístup k vašemu účtu, informujte nás okamžitě."
+          ]
         },
         {
+          "id": "cookies-tracking",
+          "icon": "HiOutlineMagnifyingGlass",
+          "h": "Soubory cookie a sledování",
+          "items": [
+            "Možáme používat soubory cookie a podobné technologie sledování ke zlepšení vašeho zážitku, analýze vzorců používání a poskytování personalizovaného obsahu.",
+            "Soubory cookie můžete spravovat nebo zakázat v nastavení svého zařízení nebo prohlížeče. Jejich zakázání však může ovlivnit některé funkce Platformy."
+          ]
+        },
+        {
+          "id": "third-party-services",
+          "icon": "HiOutlineGlobeAlt",
+          "h": "Služby třetích stran",
+          "items": [
+            "Platforma může obsahovat odkazy na webové stránky nebo služby třetích stran, které neprovozujeme my. Nezodpovídáme za postupy ochrany soukromí ani obsah těchto externích stránek.",
+            "Doporučujeme, abyste si před poskytnutím osobních údajů přečetli zásady ochrany osobních údajů příslušných služeb třetích stran."
+          ]
+        },
+        {
+          "id": "your-rights",
+          "icon": "HiOutlineShieldCheck",
           "h": "Vaše práva",
-          "p": "Kdykoli můžete požádat o přístup ke svým osobním údajům, jejich opravu nebo výmaz, a to kontaktováním našeho týmu."
+          "items": [
+            {
+              "label": "Přístup",
+              "text": "Máte právo požádat o kopii osobních údajů, které o vás uchováváme."
+            },
+            {
+              "label": "Oprava",
+              "text": "Můžete požádat o opravu jakýchkoli nepřesných nebo neúplných osobních údajů."
+            },
+            {
+              "label": "Výmaz",
+              "text": "Můžete požádat o výmaz svých osobních údajů, s výhradou zákonných a smluvních povinností."
+            },
+            {
+              "label": "Odhlášení",
+              "text": "Můžete se odhlásit z odběru propagačních sdělení pomocí odkazu pro odhlášení nebo kontaktováním nás přímo."
+            },
+            {
+              "label": "Přenositelnost údajů",
+              "text": "Můžete požádat o poskytnutí vašich údajů ve strukturovaném, strojově čitelném formátu, pokud je to technicky možné."
+            }
+          ],
+          "note": "Pro uplatnění kteréhokoli z těchto práv nás prosím kontaktujte na salesteam@honeytranslation.com.",
+          "noteEmail": "salesteam@honeytranslation.com"
+        },
+        {
+          "id": "childrens-privacy",
+          "icon": "HiOutlineHeart",
+          "h": "Ochrana soukromí dětí",
+          "items": [
+            "Platforma není určena osobám mladším 18 let. Vědomě neshromažďujeme osobní údaje od nezletilých osob.",
+            "Pokud zjistíme, že jsme shromáždili údaje od nezletilé osoby bez souhlasu rodiču, podnikneme kroky k jejich neprodlenému vymazání."
+          ]
+        },
+        {
+          "id": "changes-to-this-policy",
+          "icon": "HiOutlineDocumentCheck",
+          "h": "Změny těchto Zásad",
+          "items": [
+            "Vyhrazujeme si právo tyto Zásady ochrany osobních údajů kdykoli aktualizovat nebo upravit. Změny budou zveřejněny na této stránce spolu s aktualizovaným datem „Naposledy aktualizováno“.",
+            "Doporučujeme tyto Zásady pravidelně kontrolovat. Pokračování v používání Platformy po provedených změnách znamená souhlas s aktualizovanými Zásadami."
+          ]
+        },
+        {
+          "id": "contact-us",
+          "icon": "HiOutlineChatBubbleLeftRight",
+          "h": "Kontaktujte nás",
+          "p": "Pokud máte jakékoli dotazy, připomínky nebo žádosti týkající se těchto Zásad ochrany osobních údajů nebo našich postupů zpracování údajů, kontaktujte nás prosím na:",
+          "contactCard": {
+            "company": "HONEY UNIVERSAL DIGITAL PRIVATE LIMITED",
+            "address": "Door No.210/211, Rahat Plaza, 2nd Floor 172, Arcot Road, Vadapalani, Chennai, Tamil Nadu, India, 600026",
+            "email": "salesteam@honeytranslation.com",
+            "phone": "+91 729 900 5577"
+          }
         }
       ]
     },
     "terms": {
       "title": "Obchodní podmínky",
-      "subtitle": "Podmínky, kterými se řídí používání našich služeb.",
-      "updated": "Naposledy aktualizováno: leden 2026",
+      "subtitle": "Před používáním platformy Hanioo si prosím pozorně přečtěte tyto podmínky. Přístupem ke službám nebo jejich používáním souhlasíte s tím, že jste těmito podmínkami vázáni.",
+      "updated": "Naposledy aktualizováno: 25.02.2026",
+      "intro": [
+        "Vítejte na Hanioo. Tyto Obchodní podmínky („Podmínky“) upravují váš přístup k naší mobilní aplikaci („Platforma“) a její používání, kterou zpřístupňuje společnost HONEY UNIVERSAL DIGITAL PRIVATE LIMITED, registrovaná podle indického zákona o obchodních společnostech (Companies Act, 2013), se sídlem Door No.210/211, Rahat Plaza, 2nd Floor 172, Arcot Road, Vadapalani, Chennai, Tamil Nadu, India, 600026 (dále jen „Společnost“). Tato aplikace umožňuje uživatelům („Klientům“) rezervovat tlumočníky („Poskytovatele služeb“) pro jazykové překladatelské služby.",
+        "Používáním naší Platformy souhlasíte s dodržováním těchto Podmínek. Pokud nesouhlasíte, Platformu prosím nepoužívejte."
+      ],
       "sections": [
         {
-          "h": "Přijetí podmínek",
-          "p": "Vyžádáním nabídky nebo zadáním objednávky souhlasíte s podmínkami uvedenými na této stránce."
+          "id": "scope-of-services",
+          "icon": "HiOutlineDocumentText",
+          "h": "Rozsah služeb",
+          "items": [
+            "Hanioo funguje jako agregátorová platforma, která propojuje Klienty s nezávislými Poskytovateli služeb pro překladatelské služby, a usnadňuje tak plynulou komunikaci mezi stranami, které potřebují tlumočnickou pomoc v různých jazycích.",
+            "Tlumočnické služby neposkytujeme přímo; namísto toho usnadňujeme propojení mezi klienty a nezávislými poskytovateli služeb (tlumočníky). Prostřednictvím naší technologické infrastruktury (Aplikace) zajišťujeme uživatelsky přívětivý zážitek. Uvědomte si prosím, že tito poskytovatelé služeb nejsou zaměstnanci platformy „Hanioo“.",
+            "Platforma umožňuje Klientům procházet, rezervovat, plánovat a bezpečně platit za tlumočnické služby prostřednictvím našeho systému, což nabízí pohodlný způsob, jak se v reálném čase spojit s kvalifikovanými odborníky.",
+            "Platforma může zahrnovat další funkce, jako je hodnocení a recenzování tlumočníků."
+          ]
         },
         {
-          "h": "Dodání služby",
-          "p": "Dodací lhůty uvedené v nabídce jsou odhady založené na délce dokumentu, jeho složitosti a jazykové kombinaci a začínají běžet po potvrzení platby a zdrojových souborů."
+          "id": "user-accounts",
+          "icon": "HiOutlineUser",
+          "h": "Uživatelské účty",
+          "items": [
+            "Pro přístup k našim službám si uživatelé musí vytvořit účet a poskytnout přesné, úplné a aktuální informace, aby byla zajištěna transparentnost a hladká interakce na Platformě.",
+            "Uživatelé odpovídá za zachování důvěrnosti přihlašovacích údajů ke svému účtu, včetně uživatelských jmen a hesel.",
+            "Vyhrazujeme si právo ověřovat totožnost uživatelů a vyžádat si podpůrnou dokumentaci za účelem zachování integrity a důvěryhodnosti Platformy.",
+            "Můžeme pozastavit nebo zrušit účty v případě podvodné činnosti, uvádění nepravdivých údajů, zneužívajícího chování nebo jakéhokoli jiného porušení těchto Podmínek, abychom zajistili bezpečné prostředí pro všechny uživatele.",
+            "Služba není dostupná osobám mladším 18 let. Nesmíte umožnit osobě mladší 18 let využívat tlumočnické nebo překladatelské služby externích tlumočníků, pokud není v doprovodu."
+          ]
         },
         {
-          "h": "Povinnosti klienta",
-          "p": "Klienti odpovídají za poskytnutí přesných zdrojových materiálů a za kontrolu finálních výstupů z hlediska specifických požadavků kontextu."
+          "id": "booking-payment-cancellation",
+          "icon": "HiOutlineBanknotes",
+          "h": "Rezervace, platba a storno",
+          "items": [
+            "Klienti mohou procházet dostupné tlumočníky, prohlížet si jejich profily a rezervovat služby na základě svých konkrétních jazykových potřeb, dostupnosti a úrovně odbornosti.",
+            "Všechny platby jsou bezpečně zpracovávány prostřednictvím naší důvěryhodné platební brány Razorpay, což zajišťuje bezpečné a spolehlivé transakce. Platba musí být provedena v okamžiku rezervace plánované služby. Z bezpečnostních důvodů neukládáme na našich serverech žádné citlivé platební údaje.",
+            "Klienti musí dodržovat cenovou strukturu zobrazenou na Platformě a všechny platby musí být dokončeny před zahájením služeb, pokud není dohodnuto jinak.",
+            "Storna a vrácení peněz podléhají naší storno politice, která se může lišit v závislosti na faktorech, jako je čas storna a povaha rezervace.",
+            "Pokud Poskytovatel služeb zruší potvrzenou rezervaci, může mít Klient nárok na vrácení peněz nebo může požádat o náhradního tlumočníka."
+          ]
         },
         {
-          "h": "Duševní vlastnictví",
-          "p": "Vlastnictví přeloženého obsahu přechází na klienta po úplném zaplacení, s výjimkou dříve existujících překladových pamětí nebo glosářů uchovávaných pro účely kvality."
+          "id": "service-provider-responsibilities",
+          "icon": "HiOutlineBriefcase",
+          "h": "Odpovědnosti poskytovatele služeb",
+          "items": [
+            "Tlumočníci musí poskytovat profesionální, přesné a včasné služby Klientům a vždy dodržovat vysoké etické standardy a profesionalitu.",
+            "Nezaručujeme kvalitu, přesnost ani dostupnost konkrétního Poskytovatele služeb; Klienti musí posoudit, zda tlumočník vyhovuje jejich konkrétním potřebám.",
+            "Poskytovatelé služeb působí jako nezávislí dodavatelé a nejsou zaměstnanci, zástupci ani agenti společnosti Hanioo. Za kvalitu jimi poskytovaných služeb odpovídá výhradně sami.",
+            "Od Poskytovatelů služeb se očekává, že budou dodržovat místní zákony a předpisy týkající se jazykového tlumočení a profesionálního chování.",
+            "Registrovaným Poskytovatelem služeb musí být fyzická osoba."
+          ]
         },
         {
-          "h": "Omezení odpovědnosti",
-          "p": "Naše odpovědnost za jakýkoli nárok týkající se projektu je omezena na poplatky zaplacené za daný konkrétní překlad."
+          "id": "user-conduct-community-guidelines",
+          "icon": "HiOutlineUserGroup",
+          "h": "Chování uživatelů a pravidla komunity",
+          "items": [
+            "Uživatelé musí Platformu používat zákonným a etickým způsobem a zajistit uctivé interakce s ostatními uživateli.",
+            "Obťěkotaývání, zneužívání, diskriminace nebo jakékoli jiné nevhodné chování vůči jakémukoli uživateli či Poskytovateli služeb je přísně zakázáno a může vést k okamžitému pozastavení nebo zrušení účtu.",
+            "Uživatelé souhlasí, že se nebudou pokoušet obejít rezervační systém Platformy angažováním tlumočníků mimo Platformu pro služby zahájené prostřednictvím Hanioo.",
+            "Zneužití Platformy, včetně podvodných rezervací, falešných recenzí nebo vydávání se za jinou osobu, je přísně zakázáno a může vést k právním krokům.",
+            "Zákazníci nesou výhradní odpovědnost za jakékoli údaje, informace či materiály, které sdílí s tlumočníky prostřednictvím platformy. Hanioo nenese žádnou odpovědnost za důvěrnost, přesnost či zneužití těchto údajů tlumočníky. Zákazníci by měli být obezřetní a poskytovat během tlumočnických či překladatelských sezení pouze nezbytné informace."
+          ]
+        },
+        {
+          "id": "liability-warranties-disclaimers",
+          "icon": "HiOutlineScale",
+          "h": "Odpovědnost, záruky a vyloučení odpovědnosti",
+          "items": [
+            "Hanioo funguje pouze jako zprostředkovatel a neodpovídá za kvalitu, včasnost ani přesnost tlumočnických služeb poskytovaných Poskytovateli služeb.",
+            "Neposkytujeme žádné záruky týkající se dostupnosti, spolehlivosti či výkonu jakéhokoli tlumočníka či služby.",
+            "V nejvyšším rozsahu povoleném zákonem neneseme odpovědnost za žádné přímé, nepřímé, náhodné, zvláštní, následné ani sankní škody vyplývající z vašeho použití Platformy nebo služeb rezervovaných jejím prostřednictvím.",
+            "Uživatelé berou na vědomí, že tlumočnické služby se mohou lišit v závislosti na dialektech, regionálních jazykových odlišnostech a kontextové složitosti, a Hanioo nemůže být činěno odpovědným za žádná chybná vyložení.",
+            "Celková odpovědnost společnosti Hanioo a jejích externích tlumočníků vůči vám a službám za všechny škody, ztráty a žáloby v žádném případě nepřekročí částku pět set eur (500 €)."
+          ]
+        },
+        {
+          "id": "privacy-and-data-protection",
+          "icon": "HiOutlineLockClosed",
+          "h": "Ochrana soukromí a osobních údajů",
+          "items": [
+            "Údaje uživatelů shromažďujeme, ukládáme a zpracováváme v souladu s našimi Zásadami ochrany osobních údajů a příslušnými předpisy o ochraně údajů.",
+            "Používáním Platformy souhlasíte se shromažďováním a používáním vašich osobních údajů, které mohou zahrnovat kontaktní údaje, historii rezervací a analýzu používání.",
+            "Využíváme standardní bezpečnostní opatření k ochraně údajů uživatelů; uživatelé však berou na vědomí, že žádný online systém není zcela bez rizika.",
+            "Uživatelé mohou požádat o přístup, úpravu nebo výmaz údajů v souladu s platnými zákony a našimi postupy ochrany osobních údajů."
+          ]
+        },
+        {
+          "id": "amendments-termination-modifications",
+          "icon": "HiOutlineCog6Tooth",
+          "h": "Změny, ukončení a úpravy",
+          "items": [
+            "Vyhrazujeme si právo tyto Podmínky kdykoli aktualizovat, upravit nebo pozměnit. Uživatelé budou o významných změnách informováni a pokračování v používání Platformy znamená souhlas s aktualizovanými Podmínkami.",
+            "Můžeme podle vlastního uvážení ukončit nebo pozastavit uživatelské účty v případě porušení těchto Podmínek nebo z jakéhokoli jiného důvodu nezbytného k zachování integrity Platformy.",
+            "V případě ukončení musí být všechny neuhrazené transakce nebo závazky přesto splněny, pokud není uvedeno jinak."
+          ]
+        },
+        {
+          "id": "governing-law-dispute-resolution",
+          "icon": "HiOutlineDocumentCheck",
+          "h": "Rozhodné právo a řešení sporů",
+          "items": [
+            "Tyto Podmínky se řídí právem Indie, bez ohledu na kolizní normy.",
+            "Jakékoli spory vyplývající z těchto Podmínek budou řešeny prostřednictvím arbitráže nebo soudů v Indii, v souladu s postupy řešení sporů uvedenými v našich zásadách.",
+            "Uživatelé souhlasí, že se před zahájením formálního právního řízení pokusí o smírné vyřešení sporu."
+          ]
         }
-      ]
+      ],
+      "contact": {
+        "h": "Máte dotazy?",
+        "p": "Pokud máte jakékoli dotazy týkající se těchto Podmínek, kontaktujte nás prosím:",
+        "address": "Door No.210/211, Rahat Plaza, 2nd Floor 172, Arcot Road, Vadapalani, Chennai, Tamil Nadu, India, 600026",
+        "email": "salesteam@honeytranslation.com",
+        "phone": "+91 729 900 5577"
+      }
     }
   }
 }
